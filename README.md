@@ -2,7 +2,7 @@
 
 When the RPC fails while the facilitator waits for the receipt of a transfer it has already broadcast, `/settle` answers 500 with `unexpected_error` and an empty `transaction`, although the transfer is mined and the USDC has moved: https://github.com/x402-rs/x402-rs/issues/136
 
-The fix is on branch `fix-136-settlement-pending` of https://github.com/zachsplat/x402-rs (one commit on main e75adda8).
+The fix: https://github.com/x402-rs/x402-rs/pull/138 (branch `fix-136-settlement-pending` of https://github.com/zachsplat/x402-rs, one commit on main e75adda8).
 
 The harness runs a facilitator image against a local fork of Celo mainnet: anvil forking https://forno.celo.org (chain id 42220, 1 s blocks). The facilitator's only RPC is `harness/fault_proxy.py`, a small JSON-RPC proxy. Once armed, it forwards the next `eth_sendRawTransaction`, so the transfer is broadcast and mined, and then for a set window fails the receipt lookups for that transaction: HTTP 503 with the `-32011 no backend is currently healthy to serve traffic` body quoted in the issue, a `null` result, or a 503 to every call other than `eth_sendRawTransaction`. It can also fail the broadcast itself. `harness/run_settles.py` settles a fresh EIP-3009 `TransferWithAuthorization` of 0.001 USDC (Circle USDC on Celo, 0xcebA9300f2b948710d2653dD7B07f33A8B32118C) from a fresh payer for every settle, reads the chain from anvil directly (`authorizationState`, the `AuthorizationUsed` log and the transaction that emitted it) and grades the answer.
 
