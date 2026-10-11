@@ -1,0 +1,3 @@
+23:09:52Z === harness-check-pending-store: path /v1/release-check?image=openzeppelin-relayer@30b32b1, buyer 0x17587f77485892fc162C0ccaF12F292fF7A5286D, seller 0xFf19664E12a13A31803A7361297309A457bf837e
+23:10:01Z control: DELIVERED; client saw [(200, 'success', '0xac97c1402c')]; /settle answers ['200 success 0xac97c1402c']; authorizations used 1 of 1; seller +10000, buyer -10000
+23:10:23Z receipt-503-15s: DELIVERED; client saw [(200, 'success', '0x93db8a82a6')]; /settle answers ['202 settlement_pending 0x93db8a82a6', '200 success 0x93db8a82a6']; authorizations used 1 of 1; seller +10000, buyer -10000

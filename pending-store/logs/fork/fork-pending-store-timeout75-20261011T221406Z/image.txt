@@ -1,0 +1,5 @@
+variant: pending-store-timeout75
+image: xd-x402-facilitator:pending-store
+facilitator config: facilitator-fork-timeout75.json
+image id: sha256:ee64674b2609a60a6273c89fa8010b65b214aca96bb42d10a4a18bf33024bdd3
+labels: {"org.opencontainers.image.revision":"894e9d7290b8980431eb2c41c2271af9469d62eb","org.opencontainers.image.source":"https://github.com/x402-rs/x402-rs"}

@@ -1,0 +1,74 @@
+   Compiling x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.48s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_eip155-16d8c4270823797e)
+
+running 34 tests
+test chain::pending_settlement::tests::test_key_is_the_signature_hash ... ok
+test chain::pending_settlement::tests::test_request_hash_depends_on_payload_and_requirements ... ok
+test chain::pending_settlement::tests::test_remove_drops_the_entry ... ok
+test chain::pending_settlement::tests::test_take_returns_the_hash_once ... ok
+test chain::pending_settlement::tests::test_entries_expire_after_the_ttl ... ok
+test chain::pending_settlement::tests::test_take_with_another_request_leaves_the_entry ... ok
+test chain::provider::tests::test_poll_receipt_lookup_finds_receipt_once_lookups_recover ... ok
+test chain::types::tests::test_parse_exact_precision ... ok
+test chain::types::tests::test_parse_large_amount ... ok
+test chain::provider::tests::test_retry_receipt_lookup_finds_receipt_after_failed_lookups ... ok
+test chain::provider::tests::test_retry_receipt_lookup_stops_at_first_receipt ... ok
+test chain::provider::tests::test_retry_receipt_lookup_gives_up_after_all_attempts ... ok
+test chain::types::tests::test_parse_precision_too_high ... ok
+test chain::provider::tests::test_poll_receipt_lookup_gives_up_at_the_timeout ... ok
+test chain::types::tests::test_parse_smallest_amount ... ok
+test chain::types::tests::test_parse_very_large_amount_with_high_decimals ... ok
+test chain::types::tests::test_parse_whole_number ... ok
+test chain::types::tests::test_parse_with_commas ... ok
+test chain::types::tests::test_parse_with_currency_symbol ... ok
+test chain::types::tests::test_parse_with_decimals ... ok
+test chain::types::tests::test_parse_zero_decimals ... ok
+test networks::tests::sbc_radius_deployments_use_permit2 ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_arc_provider_passes_the_store_and_lookups_through ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_receipt_unavailable_is_recorded_for_the_retry ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_of_a_reverted_settlement_is_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_error_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_timeout_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::test_reverted_transaction_stays_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::test_send_error_before_broadcast_stays_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_reconciles_with_the_broadcast_transaction_without_sending_again ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_same_signature_in_another_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_while_the_receipt_is_still_unavailable_stays_pending_with_the_same_hash ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_without_a_store_every_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_success_and_failures_before_broadcast_record_nothing ... ok
+
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+   Doc-tests x402_chain_eip155
+
+running 23 tests
+test crates/chains/x402-chain-eip155/src/chain/config.rs - chain::config::Eip155ChainConfig (line 17) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/mod.rs - chain (line 28) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment (line 201) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment::parse (line 331) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 35) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 64) ... ignored
+test crates/chains/x402-chain-eip155/src/networks.rs - networks::KnownNetworkEip155 (line 21) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::SignerLike (line 250) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::V1Eip155ExactClient (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/mod.rs - v1_eip155_exact (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/server.rs - v1_eip155_exact::server::V1Eip155Exact::price_tag (line 32) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client (line 9) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client::V2Eip155ExactClient (line 143) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/mod.rs - v2_eip155_exact (line 23) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/server.rs - v2_eip155_exact::server::V2Eip155Exact::price_tag (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client::V2Eip155UptoClient (line 151) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/mod.rs - v2_eip155_upto (line 30) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/pending_nonce_manager.rs - chain::pending_nonce_manager::PendingNonceManager (line 36) ... ok
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155ChainReference (line 102) ... ok
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::ChecksummedAddress (line 25) ... ok
+
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.25s; merged doctests compilation took 0.25s

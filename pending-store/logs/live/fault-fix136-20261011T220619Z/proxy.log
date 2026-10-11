@@ -1,0 +1,30 @@
+22:06:20.451Z fault proxy up: upstream https://sepolia.base.org, no fault armed
+22:06:31.565Z control: {}
+22:06:31.979Z control: {}
+22:06:33.561Z broadcast 0xe543b0c30044dfeadc3a288b5a64a19f2bea8c9fb6f5012167d8656d33a22d8c accepted by anvil; no fault armed
+22:06:49.182Z control: {}
+22:06:49.594Z control: {}
+22:06:49.981Z control: {"receipt_fault": "503", "window": 15}
+22:06:51.293Z broadcast 0xf417f27b0e0caf1e246ad4bd768fa4b30821834c58c3353567ae7a012990991e accepted by anvil; receipt fault '503' for 15 s, until 22:07:06.293Z
+22:06:51.294Z fault: eth_getTransactionReceipt(0xf417f27b0e...) -> HTTP 503
+22:06:52.297Z fault: eth_getTransactionReceipt(0xf417f27b0e...) -> HTTP 503
+22:06:54.299Z fault: eth_getTransactionReceipt(0xf417f27b0e...) -> HTTP 503
+22:06:58.302Z fault: eth_getTransactionReceipt(0xf417f27b0e...) -> HTTP 503
+22:07:18.985Z control: {}
+22:07:19.453Z control: {}
+22:07:19.860Z control: {"receipt_fault": "503", "window": 60}
+22:07:21.296Z broadcast 0x05e18f65b8cdbdf0365b97bddaf302240c30f0976d893702562abcc37e4d0dc4 accepted by anvil; receipt fault '503' for 60 s, until 22:08:21.296Z
+22:07:21.300Z fault: eth_getTransactionReceipt(0x05e18f65b8...) -> HTTP 503
+22:07:22.304Z fault: eth_getTransactionReceipt(0x05e18f65b8...) -> HTTP 503
+22:07:24.309Z fault: eth_getTransactionReceipt(0x05e18f65b8...) -> HTTP 503
+22:07:28.314Z fault: eth_getTransactionReceipt(0x05e18f65b8...) -> HTTP 503
+22:08:33.870Z control: {}
+22:08:34.348Z control: {}
+22:08:34.816Z control: {"receipt_fault": "503", "window": 60}
+22:08:36.288Z broadcast 0x5bedc270cb1267ffe9a0791d1d77993bae0b317c5557658135507229c6f323ab accepted by anvil; receipt fault '503' for 60 s, until 22:09:36.288Z
+22:08:36.292Z fault: eth_getTransactionReceipt(0x5bedc270cb...) -> HTTP 503
+22:08:37.296Z fault: eth_getTransactionReceipt(0x5bedc270cb...) -> HTTP 503
+22:08:39.302Z fault: eth_getTransactionReceipt(0x5bedc270cb...) -> HTTP 503
+22:08:43.307Z fault: eth_getTransactionReceipt(0x5bedc270cb...) -> HTTP 503
+22:08:44.573Z broadcast 0x85117cb1e0e6fb74ec6ecea64f594fa629f6f896d56facf4fa8fa2fc7c7758bf accepted by anvil; no fault armed
+22:09:48.826Z control: {}

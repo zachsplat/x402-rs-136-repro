@@ -1,0 +1,22 @@
+23:09:46.569Z fault proxy up: upstream http://anvil:8545, no fault armed
+23:09:48.577Z proxy error: URLError(ConnectionRefusedError(111, 'Connection refused'))
+23:09:52.839Z control: {}
+23:09:52.857Z control: {}
+23:09:53.885Z broadcast 0xac97c1402cbce0135a8c886ce135f6adb5b2163453420ecaf6c10ff4bdbb4279 accepted by anvil; no fault armed
+23:10:01.146Z control: {}
+23:10:01.166Z control: {}
+23:10:01.182Z control: {"receipt_fault": "503", "window": 15}
+23:10:01.826Z broadcast 0x93db8a82a67769e42bc910b0749ba7d09048952f4dda964ff3a2ee29c4f33653 accepted by anvil; receipt fault '503' for 15 s, until 23:10:16.826Z
+23:10:01.842Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:02.846Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:04.851Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:08.855Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:08.876Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:09.881Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:10.884Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:11.888Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:12.893Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:13.898Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:14.903Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:15.908Z fault: eth_getTransactionReceipt(0x93db8a82a6...) -> HTTP 503
+23:10:23.046Z control: {}

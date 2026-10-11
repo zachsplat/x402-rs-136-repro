@@ -1,0 +1,14 @@
+21:59:03.637Z fault proxy up: upstream http://anvil:8545, no fault armed
+21:59:05.650Z proxy error: URLError(ConnectionRefusedError(111, 'Connection refused'))
+21:59:10.891Z control: {}
+21:59:10.907Z control: {}
+21:59:11.856Z broadcast 0xef2bfa9217bda01a8288d3a473421de653bc5c53f78ee0adef20de12310d4ab5 accepted by anvil; no fault armed
+21:59:19.097Z control: {}
+21:59:19.118Z control: {}
+21:59:19.134Z control: {"receipt_fault": "503", "window": 120}
+21:59:19.768Z broadcast 0xa495a1d3dae8ccb7cab539f0f1a92c3e0fec84870588860cae3273cfc9a85065 accepted by anvil; receipt fault '503' for 120 s, until 22:01:19.767Z
+21:59:19.785Z fault: eth_getTransactionReceipt(0xa495a1d3da...) -> HTTP 503
+21:59:20.790Z fault: eth_getTransactionReceipt(0xa495a1d3da...) -> HTTP 503
+21:59:22.795Z fault: eth_getTransactionReceipt(0xa495a1d3da...) -> HTTP 503
+21:59:26.800Z fault: eth_getTransactionReceipt(0xa495a1d3da...) -> HTTP 503
+22:01:25.139Z control: {}

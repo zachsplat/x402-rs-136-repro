@@ -1,0 +1,26 @@
+{
+  "name": "x402-rs-pending-store-repro",
+  "private": true,
+  "type": "module",
+  "description": "Resource server and paying client on the reference x402 SDK for the x402-rs pending-settlement runs.",
+  "scripts": {
+    "server": "tsx src/server.ts",
+    "client": "tsx src/client.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@x402/core": "2.28.0",
+    "@x402/evm": "2.28.0",
+    "@x402/express": "2.28.0",
+    "@x402/fetch": "2.28.0",
+    "@x402/extensions": "2.28.0",
+    "express": "4.21.2",
+    "viem": "^2.48.11"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3"
+  }
+}

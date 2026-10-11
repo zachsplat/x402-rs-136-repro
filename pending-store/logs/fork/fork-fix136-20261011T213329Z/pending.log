@@ -1,0 +1,6 @@
+21:33:37Z === fix136: path /v1/release-check?image=openzeppelin-relayer@30b32b1, buyer 0x83E5911C86eA29232d737B658C6578296E26AB15, seller 0xB93D54Ef6F804016885A6e72f7bF8d87c8631738
+21:33:45Z control: DELIVERED; client saw [(200, 'success', '0x89e1cf1028')]; /settle answers ['200 success 0x89e1cf1028']; authorizations used 1 of 1; seller +10000, buyer -10000
+21:34:06Z receipt-503-15s: PAID_NOT_DELIVERED; client saw [(402, 'unexpected_error', '')]; /settle answers ['200 success 0x89e1cf1028', '202 settlement_pending 0xa2c2012403', '500 unexpected_error ']; authorizations used 1 of 1; seller +10000, buyer -10000
+21:35:12Z receipt-503-60s: PAID_NOT_DELIVERED; client saw [(402, 'unexpected_error', '')]; /settle answers ['202 settlement_pending 0xe57532dc27', '500 unexpected_error ']; authorizations used 1 of 1; seller +10000, buyer -10000
+21:36:18Z receipt-503-60s-app-retries: DOUBLE_CHARGED; client saw [(402, 'unexpected_error', ''), (200, 'success', '0x33f8ac8e8c')]; /settle answers ['202 settlement_pending 0xb5ec8c9654', '500 unexpected_error ', '200 success 0x33f8ac8e8c']; authorizations used 2 of 2; seller +20000, buyer -20000
+21:37:24Z receipt-null-60s: PAID_NOT_DELIVERED; client saw [(402, 'unexpected_error', '')]; /settle answers ['202 settlement_pending 0xcdad153dfd', '500 unexpected_error ']; authorizations used 1 of 1; seller +10000, buyer -10000

@@ -1,0 +1,4 @@
+variant: fix136
+image: xd-x402-facilitator:fix136
+image id: sha256:1be98bcc32279ae959a65e754ad0f6cb79c375993631f3f2bc3c5e892fe6e36f
+labels: {"org.opencontainers.image.revision":"ec55c6269cf42c2753453243090b7db1b1feb261","org.opencontainers.image.source":"https://github.com/x402-rs/x402-rs"}

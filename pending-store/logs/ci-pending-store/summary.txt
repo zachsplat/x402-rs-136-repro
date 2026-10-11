@@ -1,0 +1,44 @@
+source 894e9d7290b8980431eb2c41c2271af9469d62eb (pending-store)
+cargo 1.99.0 (5f94df478 2026-08-27)
+msrv cargo 1.93.0 (083ac5135 2025-12-15)
+fmt: exit 0 (1 s): ./harness/cargo.sh fmt --all --check
+build: exit 0 (19 s): ./harness/cargo.sh build --package x402-facilitator --features full --release --locked
+test-types: exit 0 (1 s): ./harness/cargo.sh test -p x402-types --locked
+test-eip155: exit 0 (3 s): ./harness/cargo.sh test -p x402-chain-eip155 --features full --locked
+test-local: exit 0 (0 s): ./harness/cargo.sh test -p x402-facilitator-local --locked
+test-workspace: exit 101 (10 s): ./harness/cargo.sh test --workspace --no-fail-fast --locked
+clippy-workspace: exit 0 (2 s): ./harness/cargo.sh clippy --workspace --all-targets --locked
+clippy-eip155-full: exit 0 (1 s): ./harness/cargo.sh clippy -p x402-chain-eip155 --features full --all-targets --locked
+msrv-check: exit 0 (2 s): env IMAGE=rust:1.93.0-bookworm ./harness/cargo.sh check -p x402-types -p x402-facilitator-local -p x402-facilitator --features x402-chain-eip155/full --locked
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 11 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test networks::tests::permit2_proxies ... FAILED
+failures:
+failures:
+test result: FAILED. 5 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 7 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 2 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 5 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 13 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+clippy warning+error line counts (workspace, eip155-full): 10 13

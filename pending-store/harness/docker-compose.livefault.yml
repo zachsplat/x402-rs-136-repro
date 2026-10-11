@@ -1,0 +1,53 @@
+# Base Sepolia with the fault proxy in front of the facilitator's RPC: the settlement
+# transactions are real, and the proxy fails receipt lookups as in the fork runs. Ports on
+# 127.0.0.1 only: 19461 proxy, 19462 facilitator, 19463 server. Run through livefault_up.sh and
+# livefault_down.sh.
+services:
+  proxy:
+    image: python:3.12-alpine
+    user: "${HOST_UID_GID:-1000:1000}"
+    command: ["python", "-u", "/fault_proxy.py"]
+    environment:
+      UPSTREAM: ${UPSTREAM:-https://sepolia.base.org}
+      PROXY_LOG: /logs/proxy.log
+    volumes:
+      - ./fault_proxy.py:/fault_proxy.py:ro
+      - ${RUN_DIR:?RUN_DIR}:/logs
+    ports:
+      - "127.0.0.1:19461:8546"
+    healthcheck:  # healthy once a call through the proxy reaches the upstream
+      test: ["CMD", "python", "-c", "import json, urllib.request as u; r = u.urlopen(u.Request('http://127.0.0.1:8546', data=b'{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"eth_blockNumber\",\"params\":[]}', headers={'Content-Type': 'application/json'}), timeout=10); assert 'result' in json.loads(r.read())"]
+      interval: 2s
+      timeout: 12s
+      retries: 30
+  facilitator:
+    image: ${FACILITATOR_IMAGE:?FACILITATOR_IMAGE}
+    command: ["--config", "/config.json"]
+    environment:
+      RUST_LOG: info
+      XD_FACILITATOR_SIGNER: ${XD_FACILITATOR_SIGNER:?XD_FACILITATOR_SIGNER}
+    volumes:
+      - ./config/facilitator-livefault.json:/config.json:ro
+    ports:
+      - "127.0.0.1:19462:8080"
+    depends_on:
+      proxy:
+        condition: service_healthy
+  server:
+    image: node:22-bookworm-slim
+    user: "${HOST_UID_GID:-1000:1000}"
+    working_dir: /app
+    command: ["node", "--import", "tsx", "src/server.ts"]
+    environment:
+      HOME: /tmp
+      XD_PAY_TO: ${XD_PAY_TO:?XD_PAY_TO}
+      XD_FACILITATOR_URL: http://facilitator:8080
+      XD_NETWORK: eip155:84532
+      XD_PORT: "4021"
+      XD_LOG: /logs/server.log
+    volumes:
+      - ../app:/app:ro
+      - ${RUN_DIR:?RUN_DIR}:/logs
+    ports:
+      - "127.0.0.1:19463:4021"
+    depends_on: [facilitator]
