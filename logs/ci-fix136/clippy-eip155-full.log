@@ -1,0 +1,298 @@
+    Checking serde_core v1.0.228
+    Checking libc v0.2.186
+    Checking zeroize v1.8.2
+    Checking subtle v2.6.1
+    Checking rustc-hash v2.1.2
+    Checking memchr v2.8.1
+    Checking tracing v0.1.44
+    Checking generic-array v0.14.7
+    Checking der v0.7.10
+   Compiling alloy-json-abi v1.6.0
+    Checking crypto-common v0.1.7
+    Checking block-buffer v0.10.4
+    Checking digest v0.10.7
+    Checking getrandom v0.2.17
+    Checking hmac v0.12.1
+    Checking sec1 v0.7.3
+    Checking rand_core v0.6.4
+    Checking rfc6979 v0.4.0
+    Checking spki v0.7.3
+    Checking sha2 v0.10.9
+    Checking ff v0.13.1
+    Checking crypto-bigint v0.5.5
+    Checking group v0.13.0
+    Checking signature v2.2.0
+   Compiling jobserver v0.1.34
+    Checking mio v1.2.1
+    Checking socket2 v0.6.4
+   Compiling cc v1.2.63
+   Compiling alloy-sol-macro-input v1.6.0
+    Checking tinystr v0.8.3
+    Checking slab v0.4.12
+    Checking icu_locale_core v2.2.0
+    Checking serde v1.0.228
+    Checking hashbrown v0.17.1
+    Checking const-hex v1.19.1
+    Checking elliptic-curve v0.13.8
+    Checking serde_json v1.0.150
+    Checking bytes v1.11.1
+    Checking ecdsa v0.16.9
+    Checking smallvec v1.15.1
+   Compiling cmake v0.1.58
+    Checking either v1.16.0
+    Checking k256 v0.13.4
+    Checking alloy-rlp v0.3.15
+    Checking http v1.4.1
+    Checking tokio v1.52.3
+    Checking alloy-sol-type-parser v1.6.0
+    Checking ruint v1.18.0
+    Checking futures-util v0.3.32
+   Compiling aws-lc-sys v0.41.0
+   Compiling alloy-sol-macro-expander v1.6.0
+    Checking zerotrie v0.2.4
+    Checking alloy-primitives v1.6.0
+    Checking icu_collections v2.2.0
+    Checking icu_provider v2.2.0
+    Checking serde_with v3.20.0
+    Checking rustls-pki-types v1.14.1
+    Checking icu_properties v2.2.0
+    Checking icu_normalizer v2.2.0
+    Checking alloy-eip2124 v0.2.0
+    Checking alloy-serde v2.0.5
+    Checking alloy-eip2930 v0.2.3
+    Checking alloy-eip7702 v0.6.3
+    Checking alloy-eip7928 v0.3.7
+    Checking nybbles v0.4.8
+   Compiling alloy-sol-macro v1.6.0
+    Checking http-body v1.0.1
+    Checking bitflags v2.11.1
+    Checking alloy-trie v0.9.5
+    Checking idna_adapter v1.2.2
+    Checking parking_lot_core v0.9.12
+    Checking idna v1.1.0
+    Checking alloy-eips v2.0.5
+    Checking form_urlencoded v1.2.2
+    Checking alloy-sol-types v1.6.0
+    Checking itertools v0.14.0
+    Checking log v0.4.30
+    Checking hyper v1.10.0
+    Checking tower v0.5.3
+    Checking url v2.5.8
+    Checking raw-cpuid v11.6.0
+    Checking alloy-consensus v2.0.5
+    Checking rustls-native-certs v0.8.3
+    Checking hyper-util v0.1.20
+    Checking parking_lot v0.12.5
+    Checking futures-executor v0.3.32
+    Checking opentelemetry v0.31.0
+    Checking alloy-json-rpc v2.0.5
+    Checking tracing-subscriber v0.3.23
+    Checking futures v0.3.32
+    Checking tower-http v0.6.11
+    Checking tracing-log v0.2.0
+    Checking http-body-util v0.1.3
+    Checking quanta v0.12.6
+    Checking opentelemetry-http v0.31.0
+    Checking governor v0.10.4
+    Checking alloy-signer v2.0.5
+    Checking tokio-util v0.7.18
+    Checking tracing-opentelemetry v0.32.1
+    Checking num_enum v0.7.6
+    Checking hashbrown v0.14.5
+    Checking tokio-stream v0.1.18
+    Checking alloy-transport v2.0.5
+    Checking alloy-consensus-any v2.0.5
+    Checking alloy-network-primitives v2.0.5
+    Checking num-traits v0.2.19
+    Checking rand_chacha v0.3.1
+    Checking alloy-rpc-types-eth v2.0.5
+    Checking alloy-chains v0.2.34
+    Checking dashmap v6.2.1
+    Checking rand v0.8.6
+    Checking getrandom v0.4.2
+    Checking alloy-dyn-abi v1.6.0
+    Checking rust_decimal v1.42.0
+    Checking rand v0.10.1
+    Checking x402-types v2.0.2 (../x402-rs/crates/x402-types)
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/chain/mod.rs:35:28
+   |
+35 |   #[async_trait::async_trait]
+   |  ____________________________^
+36 | | pub trait FromConfig<TConfig>
+37 | | where
+38 | |     Self: Sized,
+39 | | {
+40 | |     async fn from_config(config: &TConfig) -> Result<Self, Box<dyn std::error::Error>>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/chain/mod.rs:35:1
+   |
+35 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/chain/mod.rs:35:1
+   |
+35 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: `#[warn(clippy::double_must_use)]` on by default
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/client.rs:83:15
+   |
+83 |   #[async_trait]
+   |  _______________^
+84 | | #[allow(dead_code)] // Public for consumption by downstream crates.
+85 | | pub trait PaymentCandidateSigner {
+86 | |     /// Signs a payment authorization.
+87 | |     async fn sign_payment(&self) -> Result<String, X402Error>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/client.rs:83:1
+   |
+83 | #[async_trait]
+   | ^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/client.rs:83:1
+   |
+83 | #[async_trait]
+   | ^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+53 | |     /// This checks that the payment is properly signed, matches the requirements,
+54 | |     /// and the payer has sufficient funds.
+55 | |     async fn verify(
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+...  |
+63 | |     /// for confirmation.
+64 | |     async fn settle(
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+...  |
+69 | |     /// Returns the payment methods supported by this handler.
+70 | |     async fn supported(&self) -> Result<proto::SupportedResponse, X402SchemeFacilitatorError>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `x402-types` (lib) generated 5 warnings
+    Checking alloy-rpc-types-any v2.0.5
+    Checking alloy-network v2.0.5
+    Checking alloy-signer-local v2.0.5
+   Compiling aws-lc-rs v1.17.0
+   Compiling rustls v0.23.40
+    Checking rustls-webpki v0.103.13
+    Checking tokio-rustls v0.26.4
+    Checking rustls-platform-verifier v0.7.0
+    Checking hyper-rustls v0.27.9
+    Checking reqwest v0.13.4
+    Checking alloy-transport-http v2.0.5
+    Checking alloy-rpc-client v2.0.5
+    Checking alloy-provider v2.0.5
+    Checking alloy-contract v2.0.5
+    Checking x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:15
+    |
+259 |   #[async_trait]
+    |  _______________^
+260 | | pub trait SignerLike {
+261 | |     /// Returns the address of the signer.
+262 | |     fn address(&self) -> Address;
+263 | |
+264 | |     /// Signs the given hash.
+265 | |     async fn sign_hash(&self, hash: &FixedBytes<32>) -> Result<Signature, alloy_signer::Error>;
+    | |____^
+    |
+note: the return type is pinned boxed `std::future::Future` trait object
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:1
+    |
+259 | #[async_trait]
+    | ^^^^^^^^^^^^^^
+help: remove `must_use`
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:1
+    |
+259 | #[async_trait]
+    | ^^^^^^^^^^^^^^
+    = note: alternatively, you may add an explicit reason to the `must_use` attribute
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+    = note: `#[warn(clippy::double_must_use)]` on by default
+    = note: this warning originates in the attribute macro `async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `x402-chain-eip155` (lib test) generated 1 warning (1 duplicate)
+warning: `x402-chain-eip155` (lib) generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 19.03s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`

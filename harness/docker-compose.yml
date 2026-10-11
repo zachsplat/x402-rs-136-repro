@@ -1,0 +1,45 @@
+# x402-rs #136 reproduction: a Celo mainnet fork in anvil, the fault proxy in front of it, and
+# the facilitator under test pointed only at the proxy. Run through run_all.sh, which sets the
+# project name (w3-x402-<variant>) and FACILITATOR_IMAGE.
+services:
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:latest
+    entrypoint: ["anvil"]
+    command:
+      - --host=0.0.0.0
+      - --port=8545
+      - --fork-url=${FORK_URL:-https://forno.celo.org}
+      - --block-time=1
+      - --chain-id=42220
+    ports:
+      - "127.0.0.1:19345:8545"
+  proxy:
+    image: python:3.12-alpine
+    user: "${HOST_UID_GID:-1000:1000}"
+    command: ["python", "-u", "/fault_proxy.py"]
+    environment:
+      UPSTREAM: http://anvil:8545
+      PROXY_LOG: /logs/proxy.log
+    volumes:
+      - ./fault_proxy.py:/fault_proxy.py:ro
+      - ${RUN_DIR:?RUN_DIR}:/logs
+    ports:
+      - "127.0.0.1:19346:8546"
+    depends_on: [anvil]
+    healthcheck:  # healthy once a call through the proxy reaches the forked chain
+      test: ["CMD", "python", "-c", "import json, urllib.request as u; r = u.urlopen(u.Request('http://127.0.0.1:8546', data=b'{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"eth_blockNumber\",\"params\":[]}', headers={'Content-Type': 'application/json'}), timeout=5); assert 'result' in json.loads(r.read())"]
+      interval: 2s
+      timeout: 8s
+      retries: 60
+  facilitator:
+    image: ${FACILITATOR_IMAGE:?FACILITATOR_IMAGE}
+    command: ["--config", "/config.json"]
+    environment:
+      RUST_LOG: info
+    volumes:
+      - ./config/facilitator.json:/config.json:ro
+    ports:
+      - "127.0.0.1:19380:8080"
+    depends_on:
+      proxy:
+        condition: service_healthy

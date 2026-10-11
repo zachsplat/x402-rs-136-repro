@@ -1,0 +1,15 @@
+{
+  "port": 8080,
+  "host": "0.0.0.0",
+  "chains": {
+    "eip155:42220": {
+      "eip1559": true,
+      "signers": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+      "rpc": [{ "http": "http://proxy:8546", "rate_limit": 50 }]
+    }
+  },
+  "schemes": [
+    { "id": "v1-eip155-exact", "chains": "eip155:42220" },
+    { "id": "v2-eip155-exact", "chains": "eip155:42220" }
+  ]
+}

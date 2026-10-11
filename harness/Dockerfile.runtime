@@ -1,0 +1,13 @@
+# Runtime image for a facilitator binary built by cargo.sh: the runtime stage of the
+# repository's Dockerfile, with the binary copied in instead of built here.
+# BASE can point at a mirror of the same image, e.g. public.ecr.aws/docker/library/debian:trixie-slim
+ARG BASE=debian:trixie-slim
+FROM ${BASE}
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+ARG BINARY
+COPY ${BINARY} /usr/local/bin/x402-facilitator
+EXPOSE 8080
+ENV RUST_LOG=info
+ENTRYPOINT ["x402-facilitator"]

@@ -1,0 +1,26 @@
+{
+  "control": {
+    "SETTLED": 2
+  },
+  "receipt-503-short": {
+    "MISREPORTED": 5
+  },
+  "receipt-503-long": {
+    "MISREPORTED": 5
+  },
+  "receipt-null-long": {
+    "MISREPORTED": 3
+  },
+  "outage-all-long": {
+    "MISREPORTED": 3
+  },
+  "send-503": {
+    "FAILED": 3
+  },
+  "v2-receipt-503-long": {
+    "MISREPORTED": 3
+  },
+  "retry-same-payload": {
+    "MISREPORTED": 2
+  }
+}

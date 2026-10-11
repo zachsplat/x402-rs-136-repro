@@ -1,0 +1,4 @@
+variant: stock-2.0.1
+image: ghcr.io/x402-rs/x402-facilitator:2.0.1
+image id: sha256:fdadcd404e71340ec3629cee7f12370bf13d7f0b4b5ebb54eddc56cc56b56373
+labels: {"org.opencontainers.image.created":"2026-06-19T17:12:22.085Z","org.opencontainers.image.description":"x402 payments in Rust: verify, settle, and monitor payments over HTTP 402 flows","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.revision":"de2e55bc13d864d810e8daec63b338042f02b84e","org.opencontainers.image.source":"https://github.com/x402-rs/x402-rs","org.opencontainers.image.title":"x402-rs","org.opencontainers.image.url":"https://github.com/x402-rs/x402-rs","org.opencontainers.image.version":"2.0.1"}

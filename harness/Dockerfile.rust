@@ -1,0 +1,6 @@
+# Build toolchain for the x402-rs work: the same base the repository's Dockerfile builds with
+# (rust:trixie), plus the components cargo fmt and cargo clippy need.
+FROM rust:trixie
+RUN rustup component add clippy rustfmt \
+ && apt-get update && apt-get install -y --no-install-recommends pkg-config libssl-dev \
+ && rm -rf /var/lib/apt/lists/*

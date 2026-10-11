@@ -1,0 +1,4 @@
+variant: fix136
+image: w3-x402-facilitator:fix136
+image id: sha256:0795e6bd6838f89c7cb28c7833f88bb9e9f27c1b1b7f310914f3ceb4e1b6452f
+labels: {"org.opencontainers.image.revision":"e1f51a934346b9236cad3b30db1e376ae741b02c"}

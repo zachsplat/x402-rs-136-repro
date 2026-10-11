@@ -1,0 +1,4 @@
+variant: main-e75adda8
+image: w3-x402-facilitator:main-e75adda8
+image id: sha256:6fcc3604dd62ee61181857aca6154f055c49ca717ab8746fa7fd79d71a291b59
+labels: {"org.opencontainers.image.revision":"e75adda8a0e3cf23db446883ba91b88bbab2fe28"}
