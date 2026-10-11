@@ -8,6 +8,8 @@ set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 VARIANT="${1:?variant}"; IMAGE="${2:?image}"; SCENARIOS="${3:-}"; REPS="${4:-0}"
 PYTHON="${PYTHON:-python3}"
+# image.txt below inspects the image before compose up would pull it, so pull it first.
+docker image inspect "$IMAGE" > /dev/null 2>&1 || docker pull "$IMAGE"
 export RUN_DIR="$HERE/../logs/run-$VARIANT-$(date -u +%Y%m%dT%H%M%SZ)"
 export FACILITATOR_IMAGE="$IMAGE" HOST_UID_GID="$(id -u):$(id -g)"
 PROJECT="w3-x402-$(printf %s "$VARIANT" | tr -c "a-z0-9_-" "-")"

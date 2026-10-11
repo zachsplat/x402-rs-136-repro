@@ -3,7 +3,7 @@
 # project name (w3-x402-<variant>) and FACILITATOR_IMAGE.
 services:
   anvil:
-    image: ghcr.io/foundry-rs/foundry:latest
+    image: ghcr.io/foundry-rs/foundry:v1.8.1  # the anvil the published runs used (anvil.log)
     entrypoint: ["anvil"]
     command:
       - --host=0.0.0.0
