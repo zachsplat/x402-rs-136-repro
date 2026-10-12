@@ -2,7 +2,7 @@
 
 With the #136 fix (https://github.com/x402-rs/x402-rs/pull/138), `/settle` answers `settlement_pending` (HTTP 202) with the transaction hash when the receipt cannot be fetched after the broadcast. A resource server on the reference x402 SDK then retries `/settle` once with the same payload (`settleWithPendingRetry` in `@x402/core` 2.28.0). x402-rs verifies that retry from scratch, and once the first transaction has landed it fails with `FiatTokenV2: authorization is used or canceled` (HTTP 500, `unexpected_error`, empty `transaction`). The resource server answers its client 402: the buyer has paid, gets no data, and the hash from the 202 is gone.
 
-The follow-up PR keeps a pending-settlement store in x402-rs, so the retry is reconciled with the transaction already sent: (link to follow). Its branch is `pending-settlement-store` of https://github.com/zachsplat/x402-rs: the #138 commit c6a8680 and one more, c547a34.
+The follow-up PR keeps a pending-settlement store in x402-rs, so the retry is reconciled with the transaction already sent: https://github.com/x402-rs/x402-rs/pull/140. Its branch is `pending-settlement-store` of https://github.com/zachsplat/x402-rs: the #138 commit c6a8680 and one more, c547a34.
 
 This directory has the runs behind it, on Base Sepolia and on an anvil fork of Base Sepolia, and the harness that made them.
 
