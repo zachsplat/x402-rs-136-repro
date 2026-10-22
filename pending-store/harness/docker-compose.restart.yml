@@ -1,0 +1,26 @@
+# Added to docker-compose.fork.yml for the restart rows (COMPOSE_OVERRIDE=docker-compose.restart.yml
+# ./fork_up.sh ...): settle_lb.py between the resource server and the facilitator, which can
+# restart the facilitator container between a 202 settlement_pending and the retry. It talks
+# to the Docker Engine through the mounted socket, so run it on a machine you own. Port
+# 127.0.0.1:19454 is its control endpoint.
+services:
+  lb:
+    image: python:3.12-alpine
+    user: "${HOST_UID_GID:-1000:1000}"
+    group_add: ["${DOCKER_GID:?DOCKER_GID}"]
+    command: ["python", "-u", "/settle_lb.py"]
+    environment:
+      UPSTREAM: http://facilitator:8080
+      FACILITATOR_CONTAINER: ${XD_PROJECT:?XD_PROJECT}-facilitator-1
+      LB_LOG: /logs/lb.log
+    volumes:
+      - ./settle_lb.py:/settle_lb.py:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${RUN_DIR:?RUN_DIR}:/logs
+    ports:
+      - "127.0.0.1:19454:8080"
+    depends_on: [facilitator]
+  server:
+    environment:
+      XD_FACILITATOR_URL: http://lb:8080
+    depends_on: [lb]

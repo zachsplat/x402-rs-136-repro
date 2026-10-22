@@ -1,9 +1,9 @@
 // Resource server for the pending-store runs, on the reference x402 SDK (@x402/express and
 // @x402/core 2.28.0). One paid route, GET /v1/release-check ($0.01, x402 v2 exact, USDC),
-// settled by the facilitator at XD_FACILITATOR_URL; it answers a fixed record. Every exchange
-// with the facilitator is logged with its status and body, so a 202 settlement_pending and the
-// retry that follows it are on record. A handler that fails answers 4xx, and the middleware
-// does not settle.
+// settled by the facilitator at XD_FACILITATOR_URL; it answers a fixed record, after work_ms
+// milliseconds when the query asks for them. Every exchange with the facilitator is logged with
+// its status and body, so a 202 settlement_pending and the retry that follows it are on record.
+// A handler that fails answers 4xx, and the middleware does not settle.
 //   XD_PAY_TO=<seller address> XD_FACILITATOR_URL=http://facilitator:8080 \
 //   [XD_NETWORK=eip155:84532] [XD_PORT=4021] [XD_LOG=server.log] tsx src/server.ts
 import { appendFileSync } from "node:fs";
@@ -115,12 +115,17 @@ app.get("/healthz", (_req, res) => res.json({ ok: true }));
 
 app.use(paymentMiddleware(routes, resourceServer));
 
-app.get("/v1/release-check", (req, res) => {
+app.get("/v1/release-check", async (req, res) => {
   const image = String(req.query.image ?? "");
   if (!image) {
     res.status(400).json({ error: "image is required; nothing was charged" });
     return;
   }
+  // work_ms: how long the handler works before it answers (at most 20 s), as a handler that
+  // calls a model or fetches data would. The middleware verifies the payment before the handler
+  // runs and settles it after the handler has answered.
+  const work = Math.min(Math.max(Number(req.query.work_ms ?? 0) || 0, 0), 20_000);
+  if (work) await new Promise(resolve => setTimeout(resolve, work));
   res.json({ image, record: "fixed test record" });
 });
 

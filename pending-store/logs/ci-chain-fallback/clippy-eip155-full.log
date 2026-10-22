@@ -1,0 +1,168 @@
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/chain/mod.rs:35:28
+   |
+35 |   #[async_trait::async_trait]
+   |  ____________________________^
+36 | | pub trait FromConfig<TConfig>
+37 | | where
+38 | |     Self: Sized,
+39 | | {
+40 | |     async fn from_config(config: &TConfig) -> Result<Self, Box<dyn std::error::Error>>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/chain/mod.rs:35:1
+   |
+35 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/chain/mod.rs:35:1
+   |
+35 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: `#[warn(clippy::double_must_use)]` on by default
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/client.rs:83:15
+   |
+83 |   #[async_trait]
+   |  _______________^
+84 | | #[allow(dead_code)] // Public for consumption by downstream crates.
+85 | | pub trait PaymentCandidateSigner {
+86 | |     /// Signs a payment authorization.
+87 | |     async fn sign_payment(&self) -> Result<String, X402Error>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/client.rs:83:1
+   |
+83 | #[async_trait]
+   | ^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/client.rs:83:1
+   |
+83 | #[async_trait]
+   | ^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+53 | |     /// This checks that the payment is properly signed, matches the requirements,
+54 | |     /// and the payer has sufficient funds.
+55 | |     async fn verify(
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+...  |
+63 | |     /// for confirmation.
+64 | |     async fn settle(
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+  --> crates/x402-types/src/scheme/mod.rs:49:28
+   |
+49 |   #[async_trait::async_trait]
+   |  ____________________________^
+50 | | pub trait X402SchemeFacilitator: Send + Sync {
+51 | |     /// Verifies a payment authorization without settling it.
+52 | |     ///
+...  |
+69 | |     /// Returns the payment methods supported by this handler.
+70 | |     async fn supported(&self) -> Result<proto::SupportedResponse, X402SchemeFacilitatorError>;
+   | |____^
+   |
+note: the return type is pinned boxed `std::future::Future` trait object
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: remove `must_use`
+  --> crates/x402-types/src/scheme/mod.rs:49:1
+   |
+49 | #[async_trait::async_trait]
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   = note: alternatively, you may add an explicit reason to the `must_use` attribute
+   = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+   = note: this warning originates in the attribute macro `async_trait::async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `x402-types` (lib) generated 5 warnings
+    Checking x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+warning: this function has a `#[must_use]` attribute with no message, but returns a type already considered as `#[must_use]`
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:15
+    |
+259 |   #[async_trait]
+    |  _______________^
+260 | | pub trait SignerLike {
+261 | |     /// Returns the address of the signer.
+262 | |     fn address(&self) -> Address;
+263 | |
+264 | |     /// Signs the given hash.
+265 | |     async fn sign_hash(&self, hash: &FixedBytes<32>) -> Result<Signature, alloy_signer::Error>;
+    | |____^
+    |
+note: the return type is pinned boxed `std::future::Future` trait object
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:1
+    |
+259 | #[async_trait]
+    | ^^^^^^^^^^^^^^
+help: remove `must_use`
+   --> crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs:259:1
+    |
+259 | #[async_trait]
+    | ^^^^^^^^^^^^^^
+    = note: alternatively, you may add an explicit reason to the `must_use` attribute
+    = help: for further information visit https://rust-lang.github.io/rust-clippy/rust-1.99.0/index.html#double_must_use
+    = note: `#[warn(clippy::double_must_use)]` on by default
+    = note: this warning originates in the attribute macro `async_trait` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: `x402-chain-eip155` (lib) generated 1 warning
+warning: `x402-chain-eip155` (lib test) generated 1 warning (1 duplicate)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.31s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`

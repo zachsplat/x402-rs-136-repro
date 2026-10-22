@@ -7,6 +7,7 @@ Live runs (Base Sepolia) get sepolia.basescan.org links for every settlement tra
 import json
 import os
 import sys
+from datetime import datetime
 
 
 def short(tx):
@@ -41,6 +42,27 @@ def main():
             waited = ", ".join(f"{c['ms'] / 1000:.1f}" for c in r["calls"])
             print(f"| {r['scenario']} | {saw} | {waited} | {settles} | {r['authorizations_used']} x, seller +{r['seller_usdc_delta'] / 1e6:g} USDC "
                   f"| {r['answers']} | **{r['verdict']}** | {links} |")
+        for line in open(path):
+            r = json.loads(line)
+            for restart in r.get("restarts", []):
+                print(f"\n{r['scenario']}: the facilitator was restarted after its 202 and answered again {restart['seconds']} s later.")
+            if any(c.get("copy", 1) > 1 for c in r["calls"]):
+                sent = ", ".join(f"copy {c['copy']} at {(c.get('sent_after_ms') or 0) / 1000:g} s" for c in r["calls"])
+                times = [datetime.fromisoformat(x["t"].replace("Z", "+00:00")) for x in r["facilitator_exchanges"]]
+                steps = []
+                for x, t in zip(r["facilitator_exchanges"], times):
+                    body = x["body"] if isinstance(x["body"], dict) else {}
+                    answer = ("valid" if body.get("isValid") else body.get("invalidReason") or "invalid") if x["path"].startswith("/verify") else (
+                        "success" if body.get("success") else body.get("errorReason") or "")
+                    tx = f" {short(body['transaction'])}" if body.get("transaction") else ""
+                    steps.append(f"{x['path']} {x['status']} {answer}{tx} (+{(t - times[0]).total_seconds():.1f} s)")
+                print(f"\n{r['scenario']}: {sent}; the resource server's exchanges with the facilitator, in the order answered (time of the answer): {'; '.join(steps)}.")
+            for replay in r.get("replays", []):
+                body = replay["body"] if isinstance(replay["body"], dict) else {}
+                answer = ("success" if body.get("success") else body.get("errorReason") or body.get("invalidReason")
+                          or ("valid" if body.get("isValid") else "") or str(replay["body"])[:80])
+                print(f"\n{r['scenario']}: the payment's {replay['path']} sent again: {replay['status']} {answer}"
+                      f"{' ' + short(body['transaction']) if body.get('transaction') else ''}.")
 
     if any(os.path.basename(os.path.normpath(d)) == "fork-fix136-20261011T213329Z" for d in sys.argv[1:]):
         print("\nNote: in fork-fix136-20261011T213329Z the receipt-503-15s row also lists the control's"

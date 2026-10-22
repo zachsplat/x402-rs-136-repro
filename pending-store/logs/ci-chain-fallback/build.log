@@ -1,0 +1,5 @@
+   Compiling x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+   Compiling x402-facilitator v2.0.2 (../x402-rs/facilitator)
+    Finished `release` profile [optimized] target(s) in 18.51s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`

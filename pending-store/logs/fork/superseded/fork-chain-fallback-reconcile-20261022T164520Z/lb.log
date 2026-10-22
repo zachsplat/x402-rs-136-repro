@@ -1,0 +1,22 @@
+16:45:26.386Z settle lb on :8080 -> http://facilitator:8080, restarts x402-pending-fork-chain-fallback-reconcile-facilitator-1
+16:45:28.946Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:45:36.144Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0xbfaba4246d1c5141a51344cacaea5227a1a0857bac9d2369e380a7294d316d2f","network":"eip155:84532"}
+16:45:36.925Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:45:44.057Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0xef9d4290d67d89f080e2361ed5f7c9c958e6589f3029d84313db5bc9b15686ff","errorReason":"settlement_pending","errorMessage":"Transaction 0xef9d4290d6
+16:45:52.100Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0xef9d4290d67d89f080e2361ed5f7c9c958e6589f3029d84313db5bc9b15686ff","network":"eip155:84532"}
+16:45:58.264Z control {'restart_on_pending': True}
+16:45:58.827Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:46:05.938Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0xc0911ba2b662db87d1a9294a23971cc6a0f8fbc103236113ee23e6f8233c5a4d","errorReason":"settlement_pending","errorMessage":"Transaction 0xc0911ba2b6
+16:46:06.372Z restarted x402-pending-fork-chain-fallback-reconcile-facilitator-1 (docker 204); facilitator up after 0.43 s
+16:46:14.747Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0xc0911ba2b662db87d1a9294a23971cc6a0f8fbc103236113ee23e6f8233c5a4d","network":"eip155:84532"}
+16:46:20.882Z control {}
+16:46:20.912Z control {'restart_on_pending': True}
+16:46:21.470Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:46:28.601Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0x88a7c1a861433a03e3b32f2452cff8551216ffb781b90634c70c8bf3da493b74","errorReason":"settlement_pending","errorMessage":"Transaction 0x88a7c1a861
+16:46:29.015Z restarted x402-pending-fork-chain-fallback-reconcile-facilitator-1 (docker 204); facilitator up after 0.41 s
+16:46:58.428Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0x88a7c1a861433a03e3b32f2452cff8551216ffb781b90634c70c8bf3da493b74","errorReason":"settlement_pending","errorMessage":"The authorization was us
+16:47:26.938Z control {}
+16:47:26.968Z control {}
+16:47:27.540Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:47:34.727Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x54365d681a66161d57264e66a712c3f437cecfb171a723956668a3c570c7dba8","network":"eip155:84532"}
+16:47:34.869Z control {}

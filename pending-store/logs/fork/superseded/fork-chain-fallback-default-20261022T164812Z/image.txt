@@ -1,0 +1,6 @@
+variant: chain-fallback-default
+image: w3-x402-facilitator:chain-fallback
+facilitator config: facilitator-fork.json
+compose override: docker-compose.restart.yml
+image id: sha256:61a45ac3e341ac9559afd85cd68265f465877c140541f0186a83eeee6c31c952
+labels: {"org.opencontainers.image.revision":"aa89172720bf8607376e3b4de3585c8ef42d5c9f"}

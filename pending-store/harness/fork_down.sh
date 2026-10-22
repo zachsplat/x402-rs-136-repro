@@ -4,8 +4,12 @@
 set -uo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 RUN_DIR="$(cd "${1:?run dir}" && pwd)"; PROJECT="$(cat "$RUN_DIR/project.txt")"
+OVERRIDE="$(cat "$RUN_DIR/compose-override.txt" 2>/dev/null || true)"
 export RUN_DIR FACILITATOR_CONFIG=unused FACILITATOR_IMAGE=unused XD_PAY_TO=unused XD_FACILITATOR_SIGNER=unused HOST_UID_GID="$(id -u):$(id -g)"
-c() { docker compose -p "$PROJECT" -f "$HERE/docker-compose.fork.yml" "$@"; }
+export XD_PROJECT="$PROJECT" DOCKER_GID="$(stat -c %g /var/run/docker.sock)"
+FILES=(-f "$HERE/docker-compose.fork.yml")
+if [ -n "$OVERRIDE" ]; then FILES+=(-f "$HERE/$OVERRIDE"); fi
+c() { docker compose -p "$PROJECT" "${FILES[@]}" "$@"; }
 c logs --no-color --timestamps facilitator > "$RUN_DIR/facilitator.log" 2>&1
 c logs --no-color --timestamps server > "$RUN_DIR/server.console.log" 2>&1
 c logs --no-color --timestamps anvil > "$RUN_DIR/anvil.log" 2>&1

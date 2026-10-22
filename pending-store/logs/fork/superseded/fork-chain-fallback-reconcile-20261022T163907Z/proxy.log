@@ -1,0 +1,80 @@
+16:39:07.877Z fault proxy up: upstream http://anvil:8545, no fault armed
+16:39:09.895Z proxy error: URLError(ConnectionRefusedError(111, 'Connection refused'))
+16:39:14.654Z control: {}
+16:39:14.673Z control: {}
+16:39:15.681Z broadcast 0x1bb6cae82b24901d4104e05c054577cb26a580b74f65f0f552251664f926ad1f accepted by anvil; no fault armed
+16:39:22.912Z control: {}
+16:39:22.932Z control: {}
+16:39:22.948Z control: {"receipt_fault": "503", "window": 15}
+16:39:23.578Z broadcast 0x8f90f9513c6ad515e569ad433cd3e0ed5c1eac6b4be16836f76bd0afe1070fc5 accepted by anvil; receipt fault '503' for 15 s, until 16:39:38.577Z
+16:39:23.595Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:24.600Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:26.606Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:30.611Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:30.630Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:31.635Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:32.638Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:33.642Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:34.645Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:35.649Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:36.653Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:37.657Z fault: eth_getTransactionReceipt(0x8f90f9513c...) -> HTTP 503
+16:39:44.759Z control: {}
+16:39:44.794Z control: {}
+16:39:44.815Z control: {"receipt_fault": "503", "window": 15}
+16:39:45.426Z broadcast 0x235a98665e68a5686846e18682accafaa2da634ac18b7418645a2032fa2cb4dd accepted by anvil; receipt fault '503' for 15 s, until 16:40:00.426Z
+16:39:45.444Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:46.448Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:48.452Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:52.455Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:53.252Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:54.254Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:55.256Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:56.259Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:57.261Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:58.265Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:39:59.267Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:40:00.269Z fault: eth_getTransactionReceipt(0x235a98665e...) -> HTTP 503
+16:40:07.385Z control: {}
+16:40:07.414Z control: {}
+16:40:07.434Z control: {"receipt_fault": "503", "window": 60}
+16:40:08.070Z broadcast 0xe4b8f1227148c691eb8401b030f2a47182565f79de84c4c241449a50ead10f64 accepted by anvil; receipt fault '503' for 60 s, until 16:41:08.070Z
+16:40:08.090Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:09.094Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:11.099Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:15.103Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:15.921Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:16.926Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:17.931Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:18.936Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:19.941Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:20.945Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:21.948Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:22.952Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:23.955Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:24.957Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:25.961Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:26.964Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:27.966Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:28.969Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:29.973Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:30.975Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:31.979Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:32.983Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:33.988Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:34.992Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:35.996Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:37.000Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:38.005Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:39.008Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:40.010Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:41.014Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:42.019Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:43.022Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:44.026Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:40:45.031Z fault: eth_getTransactionReceipt(0xe4b8f12271...) -> HTTP 503
+16:41:13.438Z control: {}
+16:41:13.468Z control: {}
+16:41:13.488Z control: {}
+16:41:14.137Z broadcast 0xed3153fbaa12f8de49de4459648577782ec9f741242e428d13394b6f9395f9b4 accepted by anvil; no fault armed
+16:41:21.326Z control: {}

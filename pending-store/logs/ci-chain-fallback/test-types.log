@@ -1,0 +1,65 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.23s
+     Running unittests src/lib.rs (/target/debug/deps/x402_types-fea70ad20d75eb62)
+
+running 23 tests
+test chain::chain_id::tests::test_chain_id_as_network_name ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_solana ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_unknown_namespace ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_invalid_format ... ok
+test chain::chain_id::tests::test_chain_id_roundtrip_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_from_network_name ... ok
+test chain::chain_id::tests::test_chain_id_roundtrip_solana ... ok
+test chain::chain_id::tests::test_chain_id_serialize_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_serialize_solana ... ok
+test chain::chain_id::tests::test_network_name_by_chain_id ... ok
+test chain::chain_id::tests::test_pattern_exact_matches ... ok
+test chain::chain_id::tests::test_pattern_namespace ... ok
+test chain::chain_id::tests::test_pattern_set_matches ... ok
+test chain::chain_id::tests::test_pattern_wildcard_matches ... ok
+test networks::tests::test_chain_id_as_network_name ... ok
+test networks::tests::test_chain_id_from_network_name ... ok
+test networks::tests::test_network_name_by_chain_id ... ok
+test scheme::tests::test_onchain_failure_maps_to_unexpected_error ... ok
+test scheme::tests::test_settlement_pending_maps_to_settlement_pending_problem ... ok
+test scheme::tests::test_settlement_pending_reason_serializes_as_settlement_pending ... ok
+test util::money_amount::tests::parses_supported_currency_formats ... ok
+test util::money_amount::tests::rejects_trailing_or_embedded_text ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests x402_types
+
+running 28 tests
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id (line 12) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId (line 46) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::as_network_name (line 115) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::new (line 66) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern (line 200) ... ok
+test crates/x402-types/src/chain/mod.rs - chain::ChainRegistry (line 78) ... ignored
+test crates/x402-types/src/chain/mod.rs - chain::ChainRegistry<P>::by_chain_id_pattern (line 119) ... ignored
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::from_network_name (line 97) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::exact (line 259) ... ok
+test crates/x402-types/src/networks.rs - networks::USDC (line 423) ... ignored
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::wildcard (line 242) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::set (line 277) ... ok
+test crates/x402-types/src/networks.rs - networks::NAME_TO_CHAIN_ID (line 275) ... ok
+test crates/x402-types/src/networks.rs - networks (line 86) ... ok
+test crates/x402-types/src/networks.rs - networks::CHAIN_ID_TO_NAME (line 308) ... ok
+test crates/x402-types/src/networks.rs - networks::chain_id_by_network_name (line 351) ... ok
+test crates/x402-types/src/networks.rs - networks::network_name_by_chain_id (line 392) ... ok
+test crates/x402-types/src/proto/v1.rs - proto::v1::PriceTag (line 435) ... ok
+test crates/x402-types/src/proto/util.rs - proto::util::U64String (line 17) ... ok
+test crates/x402-types/src/proto/v2.rs - proto::v2::PriceTag (line 360) ... ok
+test crates/x402-types/src/scheme/client.rs - scheme::client::PreferChain (line 149) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp (line 31) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::as_secs (line 123) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::from_secs (line 85) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::now (line 104) ... ok
+test crates/x402-types/src/util/b64.rs - util::b64::Base64Bytes (line 19) ... ok
+test crates/x402-types/src/util/lit_str.rs - util::lit_str (line 10) ... ok
+test crates/x402-types/src/util/money_amount.rs - util::money_amount (line 15) ... ok
+
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.19s; merged doctests compilation took 0.19s

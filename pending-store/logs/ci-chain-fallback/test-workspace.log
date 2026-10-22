@@ -1,0 +1,383 @@
+   Compiling x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+   Compiling x402-facilitator v2.0.2 (../x402-rs/facilitator)
+   Compiling x402-reqwest v2.0.2 (../x402-rs/crates/x402-reqwest)
+   Compiling x402-axum-example v0.1.0 (../x402-rs/examples/x402-axum-example)
+   Compiling x402-axum v2.0.2 (../x402-rs/crates/x402-axum)
+   Compiling x402-reqwest-exact v0.1.0 (../x402-rs/examples/x402-reqwest-exact)
+   Compiling x402-reqwest-upto-eip155 v0.1.0 (../x402-rs/examples/x402-reqwest-upto-eip155)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.31s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running unittests src/lib.rs (/target/debug/deps/x402_axum-bbdb3c9f006af860)
+
+running 12 tests
+test paygate::tests::validate_settlement_empty_object ... ok
+test paygate::tests::validate_settlement_missing_success_field ... ok
+test paygate::tests::validate_settlement_success_false_no_reason ... ok
+test paygate::tests::validate_settlement_success_false_with_reason ... ok
+test paygate::tests::validate_settlement_success_is_number ... ok
+test paygate::tests::validate_settlement_success_is_string ... ok
+test paygate::tests::validate_settlement_success_true ... ok
+test facilitator_client::tests::test_supported_cache_clones_independently ... ok
+test facilitator_client::tests::test_supported_inner_bypasses_cache ... ok
+test facilitator_client::tests::test_supported_cache_disabled ... ok
+test facilitator_client::tests::test_supported_cache_caches_response ... ok
+test facilitator_client::tests::test_supported_cache_with_custom_ttl ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/main.rs (/target/debug/deps/x402_axum_example-aa04798112e56723)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_aptos-eacaae3499406cc9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_eip155-5038f1f6cd2f5384)
+
+running 63 tests
+test chain::authorization_use::tests::test_log_ranges_are_split_newest_first ... ok
+test chain::authorization_use::tests::test_log_ranges_keep_the_newest_when_capped ... ok
+test chain::authorization_use::tests::test_block_search_stops_at_genesis ... ok
+test chain::authorization_use::tests::test_block_search_returns_latest_when_it_is_not_after_the_target ... ok
+test chain::authorization_use::tests::test_block_search_passes_lookup_errors_on ... ok
+test chain::authorization_use::tests::test_block_search_lands_at_or_before_the_target_in_few_lookups ... ok
+test chain::config::tests::test_reconcile_used_authorizations_is_off_unless_set ... ok
+test chain::authorization_use::tests::test_unused_authorization_is_one_call ... ok
+test chain::authorization_use::tests::test_rpc_errors_end_the_lookup_with_an_error ... ok
+test chain::authorization_use::tests::test_authorization_that_expired_before_the_lookback_is_not_searched ... ok
+test chain::pending_settlement::tests::test_entries_expire_after_the_ttl ... ok
+test chain::pending_settlement::tests::test_remove_drops_the_entry ... ok
+test chain::pending_settlement::tests::test_key_is_the_signature_hash ... ok
+test chain::pending_settlement::tests::test_request_hash_depends_on_payload_and_requirements ... ok
+test chain::pending_settlement::tests::test_take_returns_the_hash_once ... ok
+test chain::pending_settlement::tests::test_take_with_another_request_leaves_the_entry ... ok
+test chain::authorization_use::tests::test_used_authorization_without_a_log_in_range_is_not_found ... ok
+test chain::authorization_use::tests::test_used_authorization_is_found_with_a_bounded_log_query ... ok
+test chain::provider::tests::test_poll_receipt_lookup_finds_receipt_once_lookups_recover ... ok
+test chain::provider::tests::test_retry_receipt_lookup_finds_receipt_after_failed_lookups ... ok
+test chain::provider::tests::test_poll_receipt_lookup_gives_up_at_the_timeout ... ok
+test chain::provider::tests::test_retry_receipt_lookup_stops_at_first_receipt ... ok
+test chain::provider::tests::test_retry_receipt_lookup_gives_up_after_all_attempts ... ok
+test chain::types::tests::test_parse_exact_precision ... ok
+test chain::types::tests::test_parse_large_amount ... ok
+test chain::types::tests::test_parse_precision_too_high ... ok
+test chain::types::tests::test_parse_smallest_amount ... ok
+test chain::types::tests::test_parse_very_large_amount_with_high_decimals ... ok
+test chain::types::tests::test_parse_whole_number ... ok
+test chain::types::tests::test_parse_with_commas ... ok
+test chain::types::tests::test_parse_with_currency_symbol ... ok
+test chain::types::tests::test_parse_with_decimals ... ok
+test chain::types::tests::test_parse_zero_decimals ... ok
+test networks::tests::sbc_radius_deployments_use_permit2 ... ok
+test chain::provider::tests::authorization_use::test_failed_lookup_counts_as_not_found ... ok
+test chain::provider::tests::authorization_use::test_lookup_is_off_unless_configured ... ok
+test chain::provider::tests::authorization_use::test_lookup_finds_the_transaction_and_its_receipt ... ok
+test chain::provider::tests::authorization_use::test_transaction_found_without_its_receipt_comes_back_with_its_hash ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_providers_look_nothing_up_by_default ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_receipt_unavailable_is_recorded_for_the_retry ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_of_a_reverted_settlement_is_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_reconciles_with_the_broadcast_transaction_without_sending_again ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_arc_provider_passes_the_store_and_lookups_through ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_request_that_does_not_match_its_requirements_is_not_looked_up ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_while_the_receipt_is_still_unavailable_stays_pending_with_the_same_hash ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_same_signature_in_another_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_same_signature_in_another_matching_request_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_success_and_failures_before_broadcast_record_nothing ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_with_a_store_entry_reconciles_without_a_lookup ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_success_and_pending_settlements_are_not_looked_up ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_after_a_failed_balance_check_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_without_its_receipt_is_pending_and_checked_again ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_v1_request_is_looked_up_only_when_it_matches_its_requirements ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_error_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_not_found_fails_as_before ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_timeout_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::test_reverted_transaction_stays_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::test_send_error_before_broadcast_stays_a_failure ... ok
+test v2_eip155_exact::facilitator::eip3009::tests::test_request_is_looked_up_only_when_it_matches_its_requirements ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_without_a_store_entry_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_without_a_store_every_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_that_is_not_ours_or_did_not_use_the_authorization_is_not_the_settlement ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_with_another_transfer_is_not_the_settlement ... ok
+
+test result: ok. 63 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_solana-7c3707c6d4e5a939)
+
+running 10 tests
+test chain::types::tests::test_parse_exact_precision ... ok
+test chain::types::tests::test_parse_large_amount ... ok
+test chain::types::tests::test_parse_precision_too_high ... ok
+test chain::types::tests::test_parse_overflow_returns_error ... ok
+test chain::types::tests::test_parse_smallest_amount ... ok
+test chain::types::tests::test_parse_with_commas ... ok
+test chain::types::tests::test_parse_with_currency_symbol ... ok
+test chain::types::tests::test_parse_with_decimals ... ok
+test chain::types::tests::test_parse_whole_number ... ok
+test chain::types::tests::test_parse_zero_decimals ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_tron-90a550aa4c38706a)
+
+running 6 tests
+test networks::tests::chain_id_format ... ok
+test networks::tests::chain_reference_display ... ok
+test networks::tests::eip712_chain_ids ... ok
+test networks::tests::chain_reference_round_trips ... ok
+test networks::tests::usdt_mainnet ... ok
+test networks::tests::permit2_proxies ... FAILED
+
+failures:
+
+---- networks::tests::permit2_proxies stdout ----
+
+thread 'networks::tests::permit2_proxies' (1937) panicked at crates/chains/x402-chain-tron/src/networks.rs:125:9:
+assertion failed: TronChainReference::mainnet().x402_exact_permit2_proxy().is_none()
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    networks::tests::permit2_proxies
+
+test result: FAILED. 5 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p x402-chain-tron --lib`
+     Running unittests src/lib.rs (/target/debug/deps/x402_facilitator-b5930cc4cb38cda7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/target/debug/deps/x402_facilitator-36ca4dcb6b16ece4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_facilitator_local-fbf4397132409d77)
+
+running 2 tests
+test handlers::tests::test_onchain_failure_response_has_no_transaction ... ok
+test handlers::tests::test_settlement_pending_response_carries_transaction_and_network ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_reqwest-b75dd50b3d922cae)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/target/debug/deps/x402_reqwest_exact-411f1efcf65eac69)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/target/debug/deps/x402_reqwest_upto_eip155-651589f93033cad5)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/target/debug/deps/x402_types-f1c145d161658a81)
+
+running 23 tests
+test chain::chain_id::tests::test_chain_id_deserialize_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_as_network_name ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_invalid_format ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_solana ... ok
+test chain::chain_id::tests::test_chain_id_deserialize_unknown_namespace ... ok
+test chain::chain_id::tests::test_chain_id_roundtrip_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_from_network_name ... ok
+test chain::chain_id::tests::test_chain_id_roundtrip_solana ... ok
+test chain::chain_id::tests::test_chain_id_serialize_eip155 ... ok
+test chain::chain_id::tests::test_chain_id_serialize_solana ... ok
+test chain::chain_id::tests::test_network_name_by_chain_id ... ok
+test chain::chain_id::tests::test_pattern_exact_matches ... ok
+test chain::chain_id::tests::test_pattern_namespace ... ok
+test chain::chain_id::tests::test_pattern_set_matches ... ok
+test chain::chain_id::tests::test_pattern_wildcard_matches ... ok
+test networks::tests::test_chain_id_as_network_name ... ok
+test networks::tests::test_chain_id_from_network_name ... ok
+test scheme::tests::test_onchain_failure_maps_to_unexpected_error ... ok
+test networks::tests::test_network_name_by_chain_id ... ok
+test scheme::tests::test_settlement_pending_maps_to_settlement_pending_problem ... ok
+test scheme::tests::test_settlement_pending_reason_serializes_as_settlement_pending ... ok
+test util::money_amount::tests::parses_supported_currency_formats ... ok
+test util::money_amount::tests::rejects_trailing_or_embedded_text ... ok
+
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests x402_axum
+
+running 11 tests
+test crates/x402-axum/src/layer.rs - layer::X402Middleware<F>::from_facilitator (line 107) ... ignored
+test crates/x402-axum/src/layer.rs - layer::X402Middleware<TFacilitator>::with_dynamic_price (line 276) ... ignored
+test crates/x402-axum/src/paygate.rs - paygate (line 17) ... ignored
+test crates/x402-axum/src/paygate.rs - paygate::DynamicPriceTags (line 810) ... ignored
+test crates/x402-axum/src/paygate.rs - paygate::DynamicPriceTags<TPriceTag>::new (line 858) ... ignored
+test crates/x402-axum/src/paygate.rs - paygate::PriceTagSource (line 695) ... ignored
+test crates/x402-axum/src/paygate.rs - paygate::StaticPriceTags (line 732) ... ignored
+test crates/x402-axum/src/lib.rs - (line 48) ... ok
+test crates/x402-axum/src/facilitator_client.rs - facilitator_client (line 9) ... ok
+test crates/x402-axum/src/lib.rs - (line 10) ... ok
+test crates/x402-axum/src/layer.rs - layer (line 10) ... ok
+
+test result: ok. 4 passed; 0 failed; 7 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+all doctests ran in 0.69s; merged doctests compilation took 0.66s
+   Doc-tests x402_chain_aptos
+
+running 5 tests
+test crates/chains/x402-chain-aptos/src/lib.rs - (line 31) ... ignored
+test crates/chains/x402-chain-aptos/src/networks.rs - networks::KnownNetworkAptos (line 21) ... ignored
+test crates/chains/x402-chain-aptos/src/v2_aptos_exact/mod.rs - v2_aptos_exact (line 15) ... ignored
+test crates/chains/x402-chain-aptos/src/chain/types.rs - chain::types::AptosChainReference (line 18) ... ok
+test crates/chains/x402-chain-aptos/src/chain/types.rs - chain::types::Address (line 146) ... ok
+
+test result: ok. 2 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.14s; merged doctests compilation took 0.14s
+   Doc-tests x402_chain_eip155
+
+running 23 tests
+test crates/chains/x402-chain-eip155/src/chain/config.rs - chain::config::Eip155ChainConfig (line 17) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/mod.rs - chain (line 29) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment (line 201) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment::parse (line 331) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 35) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 64) ... ignored
+test crates/chains/x402-chain-eip155/src/networks.rs - networks::KnownNetworkEip155 (line 21) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::SignerLike (line 250) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::V1Eip155ExactClient (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/mod.rs - v1_eip155_exact (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/server.rs - v1_eip155_exact::server::V1Eip155Exact::price_tag (line 32) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client (line 9) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client::V2Eip155ExactClient (line 143) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/mod.rs - v2_eip155_exact (line 23) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/server.rs - v2_eip155_exact::server::V2Eip155Exact::price_tag (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client::V2Eip155UptoClient (line 151) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/mod.rs - v2_eip155_upto (line 30) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/pending_nonce_manager.rs - chain::pending_nonce_manager::PendingNonceManager (line 36) ... ok
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155ChainReference (line 102) ... ok
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::ChecksummedAddress (line 25) ... ok
+
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.31s; merged doctests compilation took 0.30s
+   Doc-tests x402_chain_solana
+
+running 14 tests
+test crates/chains/x402-chain-solana/src/chain/config.rs - chain::config::SolanaChainConfig (line 17) ... ignored
+test crates/chains/x402-chain-solana/src/chain/mod.rs - chain (line 21) ... ignored
+test crates/chains/x402-chain-solana/src/chain/provider.rs - chain::provider::SolanaChainProvider (line 82) ... ignored
+test crates/chains/x402-chain-solana/src/lib.rs - (line 35) ... ignored
+test crates/chains/x402-chain-solana/src/lib.rs - (line 51) ... ignored
+test crates/chains/x402-chain-solana/src/lib.rs - (line 64) ... ignored
+test crates/chains/x402-chain-solana/src/networks.rs - networks::KnownNetworkSolana (line 22) ... ignored
+test crates/chains/x402-chain-solana/src/v1_solana_exact/mod.rs - v1_solana_exact (line 25) ... ignored
+test crates/chains/x402-chain-solana/src/v2_solana_exact/mod.rs - v2_solana_exact (line 23) ... ignored
+test crates/chains/x402-chain-solana/src/chain/types.rs - chain::types::SolanaChainReference (line 26) ... ok
+test crates/chains/x402-chain-solana/src/chain/types.rs - chain::types::SolanaTokenDeployment (line 159) ... ok
+test crates/chains/x402-chain-solana/src/chain/types.rs - chain::types::Address (line 245) ... ok
+test crates/chains/x402-chain-solana/src/v1_solana_exact/client.rs - v1_solana_exact::client (line 15) ... ok
+test crates/chains/x402-chain-solana/src/v2_solana_exact/client.rs - v2_solana_exact::client (line 8) ... ok
+
+test result: ok. 5 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.61s; merged doctests compilation took 0.61s
+   Doc-tests x402_chain_tron
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests x402_facilitator
+
+running 2 tests
+test facilitator/src/chain.rs - chain (line 20) ... ignored
+test facilitator/src/schemes.rs - schemes (line 21) ... ignored
+
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.07s; merged doctests compilation took 0.07s
+   Doc-tests x402_facilitator_local
+
+running 13 tests
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local (line 18) ... ignored
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local::FacilitatorLocal (line 53) ... ignored
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local::FacilitatorLocal<A>::new (line 76) ... ignored
+test crates/x402-facilitator-local/src/handlers.rs - handlers::routes (line 83) ... ignored
+test crates/x402-facilitator-local/src/lib.rs - (line 24) ... ignored
+test crates/x402-facilitator-local/src/util/mod.rs - util (line 12) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down (line 9) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown (line 47) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::cancellation_token (line 117) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::recv (line 142) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::try_new (line 81) ... ignored
+test crates/x402-facilitator-local/src/util/telemetry.rs - util::telemetry (line 21) ... ignored
+test crates/x402-facilitator-local/src/util/telemetry.rs - util::telemetry::TelemetryProviders::http_tracing (line 427) ... ignored
+
+test result: ok. 0 passed; 0 failed; 13 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.07s; merged doctests compilation took 0.07s
+   Doc-tests x402_reqwest
+
+running 6 tests
+test crates/x402-reqwest/src/builder.rs - builder::ReqwestWithPayments (line 18) - compile ... ok
+test crates/x402-reqwest/src/client.rs - client::X402Client<TSelector>::with_selector (line 119) ... ignored
+test crates/x402-reqwest/src/lib.rs - (line 10) ... ignored
+test crates/x402-reqwest/src/client.rs - client::X402Client (line 28) ... ok
+test crates/x402-reqwest/src/client.rs - client::X402Client<TSelector>::register (line 93) ... ok
+test crates/x402-reqwest/src/client.rs - client::X402Client (line 38) ... ok
+
+test result: ok. 4 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.39s; merged doctests compilation took 0.38s
+   Doc-tests x402_types
+
+running 28 tests
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id (line 12) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId (line 46) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::as_network_name (line 115) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::new (line 66) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainId::from_network_name (line 97) ... ok
+test crates/x402-types/src/chain/mod.rs - chain::ChainRegistry (line 78) ... ignored
+test crates/x402-types/src/chain/mod.rs - chain::ChainRegistry<P>::by_chain_id_pattern (line 119) ... ignored
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern (line 200) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::exact (line 259) ... ok
+test crates/x402-types/src/networks.rs - networks::USDC (line 423) ... ignored
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::wildcard (line 242) ... ok
+test crates/x402-types/src/chain/chain_id.rs - chain::chain_id::ChainIdPattern::set (line 277) ... ok
+test crates/x402-types/src/networks.rs - networks::NAME_TO_CHAIN_ID (line 275) ... ok
+test crates/x402-types/src/networks.rs - networks::CHAIN_ID_TO_NAME (line 308) ... ok
+test crates/x402-types/src/networks.rs - networks (line 86) ... ok
+test crates/x402-types/src/networks.rs - networks::chain_id_by_network_name (line 351) ... ok
+test crates/x402-types/src/networks.rs - networks::network_name_by_chain_id (line 392) ... ok
+test crates/x402-types/src/proto/util.rs - proto::util::U64String (line 17) ... ok
+test crates/x402-types/src/proto/v1.rs - proto::v1::PriceTag (line 435) ... ok
+test crates/x402-types/src/proto/v2.rs - proto::v2::PriceTag (line 360) ... ok
+test crates/x402-types/src/scheme/client.rs - scheme::client::PreferChain (line 149) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::as_secs (line 123) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp (line 31) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::from_secs (line 85) ... ok
+test crates/x402-types/src/timestamp.rs - timestamp::UnixTimestamp::now (line 104) ... ok
+test crates/x402-types/src/util/b64.rs - util::b64::Base64Bytes (line 19) ... ok
+test crates/x402-types/src/util/lit_str.rs - util::lit_str (line 10) ... ok
+test crates/x402-types/src/util/money_amount.rs - util::money_amount (line 15) ... ok
+
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.18s; merged doctests compilation took 0.18s
+error: 1 target failed:
+    `-p x402-chain-tron --lib`

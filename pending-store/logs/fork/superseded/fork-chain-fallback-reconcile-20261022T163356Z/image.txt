@@ -1,0 +1,6 @@
+variant: chain-fallback-reconcile
+image: w3-x402-facilitator:chain-fallback
+facilitator config: facilitator-fork-reconcile.json
+compose override: docker-compose.restart.yml
+image id: sha256:101e35953b69279ab3944395a56bf3ae5b1ee0654c6417723a739fb311160948
+labels: {"org.opencontainers.image.revision":"644c4710e4db4ba5b6518d5b7a7d30d8b5eb355d"}

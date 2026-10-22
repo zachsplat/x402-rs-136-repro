@@ -1,0 +1,27 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.22s
+     Running unittests src/lib.rs (/target/debug/deps/x402_facilitator_local-fde258103d2e5d36)
+
+running 2 tests
+test handlers::tests::test_onchain_failure_response_has_no_transaction ... ok
+test handlers::tests::test_settlement_pending_response_carries_transaction_and_network ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests x402_facilitator_local
+
+running 11 tests
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local (line 18) ... ignored
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local::FacilitatorLocal (line 53) ... ignored
+test crates/x402-facilitator-local/src/facilitator_local.rs - facilitator_local::FacilitatorLocal<A>::new (line 76) ... ignored
+test crates/x402-facilitator-local/src/handlers.rs - handlers::routes (line 83) ... ignored
+test crates/x402-facilitator-local/src/lib.rs - (line 24) ... ignored
+test crates/x402-facilitator-local/src/util/mod.rs - util (line 12) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down (line 9) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown (line 47) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::cancellation_token (line 117) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::recv (line 142) ... ignored
+test crates/x402-facilitator-local/src/util/sig_down.rs - util::sig_down::SigDown::try_new (line 81) ... ignored
+
+test result: ok. 0 passed; 0 failed; 11 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.08s; merged doctests compilation took 0.07s

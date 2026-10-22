@@ -25,6 +25,8 @@ I read every settlement above back from https://sepolia.base.org and https://bas
 
 On the fork the same verdicts hold, and also for `null` receipts for 60 s and 503 for 120 s. With `receipt_timeout_secs` at 75 instead of the default 30 (`harness/config/facilitator-fork-timeout75.json`), the 60 s outages of 503s and of `null` receipts were delivered, in 60.7 and 60.5 s. `summary.md` has every row of every run.
 
+A retry that reaches another instance, or the facilitator after a restart, finds no entry in the store and fails as before. [`chain-fallback.md`](chain-fallback.md) has the runs of a branch that answers it from the chain, with restart, replay and copies rows (2026-10-22).
+
 ## Files
 
 - `summary.md`: one table per run (`harness/summarize_pending.py`), the last two being the harness checks described below.
@@ -54,7 +56,7 @@ docker run --rm --user "$(id -u):$(id -g)" -e HOME=/tmp -v "$PWD/pending-store/a
 export XD_FACILITATOR_SIGNER=0x... XD_BUYER_PRIVATE_KEY=0x... XD_PAY_TO=0x...
 cd pending-store/harness
 RUN=$(./fork_up.sh local w3-x402-facilitator:pending-store)             # logs to pending-store/logs/fork/fork-local-<UTC time>/
-python pending_test.py --run-dir "$RUN" --label local                    # all six scenarios; --scenarios control,receipt-503-15s for two
+python pending_test.py --run-dir "$RUN" --label local --scenarios control,receipt-503-15s,receipt-503-60s,receipt-503-60s-app-retries,receipt-null-60s,receipt-503-120s   # the six scenarios of the tables above; the others are in chain-fallback.md
 ./fork_down.sh "$RUN"
 python summarize_pending.py "$RUN"
 ```

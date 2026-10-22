@@ -55,7 +55,7 @@ The difference from the report in the issue: a local fork and a proxy that injec
 
 ## Follow-up: the retried `/settle`
 
-With the fix, a resource server on the reference x402 SDK retries `/settle` once after a `settlement_pending` answer, and x402-rs verifies that retry from scratch. Once the transfer has landed the retry fails, so the buyer pays and gets a 402 with no hash. The follow-up PR, stacked on #138, keeps a pending-settlement store so the retry is reconciled with the transaction already sent: https://github.com/x402-rs/x402-rs/pull/140. Its Base Sepolia runs, logs and harness are in [`pending-store/`](pending-store/).
+With the fix, a resource server on the reference x402 SDK retries `/settle` once after a `settlement_pending` answer, and x402-rs verifies that retry from scratch. Once the transfer has landed the retry fails, so the buyer pays and gets a 402 with no hash. The follow-up PR, stacked on #138, keeps a pending-settlement store so the retry is reconciled with the transaction already sent: https://github.com/x402-rs/x402-rs/pull/140. Its Base Sepolia runs, logs and harness are in [`pending-store/`](pending-store/). A retry that reaches another instance, or the facilitator after a restart, finds no store entry; [`pending-store/chain-fallback.md`](pending-store/chain-fallback.md) has the runs of a branch that answers it from the chain.
 
 ## License
 

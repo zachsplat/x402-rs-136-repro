@@ -1,0 +1,22 @@
+16:48:18.347Z settle lb on :8080 -> http://facilitator:8080, restarts x402-pending-fork-chain-fallback-default-facilitator-1
+16:48:20.973Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:48:28.181Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x4d6da56f8d860f360b171c77dc76825091699beecf1f4646b0da1c80610bb917","network":"eip155:84532"}
+16:48:28.946Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:48:36.073Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0x1d1a330e3cdad5337a38e14333286d4996c5a72e0703d98db5e2d440a6d55fea","errorReason":"settlement_pending","errorMessage":"Transaction 0x1d1a330e3c
+16:48:44.109Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x1d1a330e3cdad5337a38e14333286d4996c5a72e0703d98db5e2d440a6d55fea","network":"eip155:84532"}
+16:48:50.252Z control {'restart_on_pending': True}
+16:48:50.804Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:48:57.916Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0x6635a171f44a2a882cd7f28260e3fcdecd04eb97a3f2457af2f9b007fb8d9ab0","errorReason":"settlement_pending","errorMessage":"Transaction 0x6635a171f4
+16:48:58.359Z restarted x402-pending-fork-chain-fallback-default-facilitator-1 (docker 204); facilitator up after 0.44 s
+16:48:58.400Z POST /settle -> 500 {"success":false,"network":"","transaction":"","errorReason":"unexpected_error","errorMessage":"server returned an error response: error code 3: execution reverted: FiatTokenV2: authorization is used 
+16:49:11.277Z control {}
+16:49:11.306Z control {'restart_on_pending': True}
+16:49:11.852Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:49:18.982Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0xc6702539e24a32f00949b30efe9ecdb7324a2f1fdbe2479ce255caf66746e151","errorReason":"settlement_pending","errorMessage":"Transaction 0xc6702539e2
+16:49:19.414Z restarted x402-pending-fork-chain-fallback-default-facilitator-1 (docker 204); facilitator up after 0.43 s
+16:49:19.438Z POST /settle -> 500 {"success":false,"network":"","transaction":"","errorReason":"unexpected_error","errorMessage":"server returned an error response: error code 3: execution reverted: FiatTokenV2: authorization is used 
+16:50:17.331Z control {}
+16:50:17.362Z control {}
+16:50:17.933Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+16:50:25.139Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x0d9293d25b4104c74d2e022331464053808fcb4e6541307db5256042b7aad52a","network":"eip155:84532"}
+16:50:25.265Z control {}
