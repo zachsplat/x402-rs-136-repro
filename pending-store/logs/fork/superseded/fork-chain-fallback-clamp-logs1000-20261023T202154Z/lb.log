@@ -1,0 +1,19 @@
+20:22:01.123Z settle lb on :8080 -> http://facilitator:8080, restarts x402-pending-fork-chain-fallback-clamp-logs1000-facilitator-1
+20:22:09.245Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+20:22:16.440Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x4d5be50e8993059224643b25c4d8da295020bcd958b447070f87094b15b6308a","network":"eip155:84532"}
+20:22:16.679Z control {'restart_on_pending': True}
+20:22:17.501Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+20:22:24.643Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0x6ada838dfcc81499c29ff87d332348535ac746d6093eaf2f6a67fdb4496306a1","errorReason":"settlement_pending","errorMessage":"Transaction 0x6ada838dfc
+20:22:25.209Z restarted x402-pending-fork-chain-fallback-clamp-logs1000-facilitator-1 (docker 204); facilitator up after 0.57 s
+20:22:32.852Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x6ada838dfcc81499c29ff87d332348535ac746d6093eaf2f6a67fdb4496306a1","network":"eip155:84532"}
+20:22:39.054Z control {}
+20:22:39.109Z control {'restart_on_pending': True}
+20:22:39.810Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+20:22:46.944Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0xaaefa0ee27914d7917860b1001c4321d7b2f13acdd22d804391167fe4e32d346","errorReason":"settlement_pending","errorMessage":"Transaction 0xaaefa0ee27
+20:22:47.439Z restarted x402-pending-fork-chain-fallback-clamp-logs1000-facilitator-1 (docker 204); facilitator up after 0.50 s
+20:23:17.076Z POST /settle -> 202 {"success":false,"network":"eip155:84532","transaction":"0xaaefa0ee27914d7917860b1001c4321d7b2f13acdd22d804391167fe4e32d346","errorReason":"settlement_pending","errorMessage":"The authorization was us
+20:23:45.148Z control {}
+20:23:45.179Z control {}
+20:23:45.835Z POST /verify -> 200 {"isValid":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC"}
+20:23:53.024Z POST /settle -> 200 {"success":true,"payer":"0x5856863A5aBDC9D868fBD67eFDeD4f9A7DE5fEAC","transaction":"0x089ceaf739885fb1c4bc6e2790e312149e84da6224698c2ece7da7f1ff3f71ef","network":"eip155:84532"}
+20:23:53.133Z control {}

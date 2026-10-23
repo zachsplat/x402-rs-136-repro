@@ -1,6 +1,6 @@
 # Follow-up: a retried `/settle` the store cannot answer
 
-The pending-settlement store of https://github.com/x402-rs/x402-rs/pull/140 lives in the facilitator process. A retry that reaches another instance, or the same one after a restart, finds no entry, is settled from scratch and fails once the first transfer has landed (`FiatTokenV2: authorization is used or canceled`): the buyer has paid and the resource server answers 402 with no hash. In the PR thread I offered to answer such a retry from the chain instead (https://github.com/x402-rs/x402-rs/pull/140#issuecomment-6342369212). The branch `eip3009-chain-fallback` of https://github.com/zachsplat/x402-rs does that: one commit, a15d29a, on the PR's head c547a34.
+The pending-settlement store of https://github.com/x402-rs/x402-rs/pull/140 lives in the facilitator process. A retry that reaches another instance, or the same one after a restart, finds no entry, is settled from scratch and fails once the first transfer has landed (`FiatTokenV2: authorization is used or canceled`): the buyer has paid and the resource server answers 402 with no hash. In the PR thread I offered to answer such a retry from the chain instead (https://github.com/x402-rs/x402-rs/pull/140#issuecomment-6342369212). The branch `eip3009-chain-fallback` of https://github.com/zachsplat/x402-rs does that: two commits on the PR's head c547a34, a15d29a (the fallback) and ef0e0ff (the log query fitted to the RPC's range limit, after review on #140).
 
 ## What the branch does
 
@@ -8,7 +8,7 @@ With `reconcile_used_authorizations` set for the chain (off by default), a settl
 
 1. `authorizationState(from, nonce)` on the asset. An unused authorization stops here (one call).
 2. The blocks that can hold the use: after `validAfter`, before `validBefore`, and within the last five minutes (the store's TTL), found from block timestamps.
-3. `eth_getLogs` for `AuthorizationUsed(from, nonce)` on the asset, 100 blocks per call, newest first, at most 50 calls.
+3. `eth_getLogs` for `AuthorizationUsed(from, nonce)` on the asset, newest first, at most `log_query_max_blocks` blocks per call (default 100) and at most 50 calls. A range the RPC refuses is split in halves until it is accepted, and the rest of the lookup keeps the smaller size.
 4. The receipt of the transaction found, waited for as the store's reconcile waits (`receipt_timeout_secs`).
 5. Success with that hash if the transaction succeeded, was sent by one of the facilitator's signers, and the asset emitted a `Transfer` of the signed value from the payer to the recipient. If the receipt is still unavailable, `settlement_pending` (202) with that hash, not recorded in the store, so the next retry is checked again. Anything else fails as before.
 
@@ -102,13 +102,41 @@ The copies rows show the cost. With the option off, every copy after the first f
 
 `facilitator-answers.md` in each run directory lists every exchange with the facilitator; `lb.log` lists the restarts and the replayed requests; `pending-results.jsonl` has each row in full, with the settlement transactions read from anvil through `AuthorizationUsed`; `client-*.jsonl` has what the client got for each copy.
 
+## The log query against an RPC's range limit (2026-10-23)
+
+ef0e0ff makes the size of one log query a setting, `log_query_max_blocks`, and splits a range the RPC refuses. To see it end to end, the facilitator ran with `log_query_max_blocks: 1000` (`config/facilitator-fork-reconcile-logs1000.json`), the size that made every lookup fail in the 644c471 run below. Anvil sends the part of a log query that lies before the fork point to https://sepolia.base.org, which refuses more than 201 blocks with HTTP 413 (`-32614 eth_getLogs is limited to a 200 range`); anvil passes that on as a JSON-RPC error. In `anvil.log`, each of the three lookups had its 1,000-block query refused, then the 500-block one, and in the first two also the 250-block one; the next query was accepted and found the settlement. The rows end as in the run with the option on and the default size above.
+
+### fork-chain-fallback-clamp-logs1000-20261023T202602Z (anvil fork of Base Sepolia)
+
+`image: w3-x402-facilitator:chain-fallback-clamp`, `facilitator config: facilitator-fork-reconcile-logs1000.json`, `compose override: docker-compose.restart.yml`, `labels: {"org.opencontainers.image.revision":"ef0e0ffc808090a24a888f8b3ff0809575924d94"}`
+
+| Scenario | Client saw (HTTP, PAYMENT-RESPONSE) | Client waited (s) | /settle answers, in order | Paid | Answers | Verdict | Settlement transactions |
+|---|---|---|---|---|---|---|---|
+| control | 200 success tx=yes | 7.7 | 200 success | 1 x, seller +0.01 USDC | 1 | **DELIVERED** | `0x6e2c414c...75d8` |
+| receipt-503-15s-restart | 200 success tx=yes | 15.4 | 202 settlement_pending, 200 success | 1 x, seller +0.01 USDC | 1 | **DELIVERED** | `0x6077df15...5c18` |
+| receipt-503-60s-restart | 402 settlement_pending tx=yes | 37.5 | 202 settlement_pending, 202 settlement_pending | 1 x, seller +0.01 USDC | 0 | **PAID_NOT_DELIVERED** | `0x76425b1e...d010` |
+| settle-replay | 200 success tx=yes | 7.3 | 200 success | 1 x, seller +0.01 USDC | 1 | **DELIVERED** | `0xae22ded7...ef51` |
+
+The refused queries in `anvil.log` (block ranges inclusive):
+
+| Lookup | Refused | Accepted next |
+|---|---|---|
+| receipt-503-15s-restart, 20:26:27Z | 49325482..=49326481 (1,000), 49325982..=49326481 (500), 49326232..=49326481 (250) | 125 blocks, found |
+| receipt-503-60s-restart, 20:26:49Z | 49325493..=49326492 (1,000), 49325993..=49326492 (500), 49326243..=49326492 (250) | 125 blocks, found |
+| settle-replay, 20:27:54Z | 49325526..=49326525 (1,000), 49326026..=49326525 (500) | 250 blocks, found (more of them were mined on the fork by then, so less of the range went to https://sepolia.base.org) |
+
+Against https://sepolia.base.org directly, a temporary test (not in the branch) ran the lookup for a settlement of the network itself (`0x41de3952fdd69c427ce17ded8ebb43974b7ca0f6bf23ab03f8d7ab5ab4b54a33`, block 49322910): with `log_query_max_blocks` 1,000 it took 5 calls (1,000, 500 and 250 refused with HTTP 413, then two of 125), with the default 100 it took 3, and it also found it through the facilitator's own RPC client. What public Base Sepolia endpoints answered to the same filter is tabled in the PR description.
+
+The checks of ef0e0ff are in `logs/ci-chain-fallback-clamp/`: `cargo test -p x402-chain-eip155 --features full` passes 67 unit tests and 3 doc tests, `cargo test --workspace` passes 162 and fails only `x402-chain-tron` `networks::tests::permit2_proxies`, as on main, and clippy reports the same warnings as at a15d29a.
+
 ## What the harness caught on the way
 
-Three earlier builds of the branch are in `logs/fork/superseded/`; none of those commits was published.
+Four earlier builds of the branch are in `logs/fork/superseded/`; none of those commits was published.
 
 - `fork-chain-fallback-reconcile-20261022T163356Z` (644c471): the log queries covered up to 1,000 blocks, and every lookup failed with `eth_getLogs is limited to a 200 range`. Anvil sends log queries for blocks before the fork point to https://sepolia.base.org, which caps the range at 200 blocks, and Base Sepolia makes a block every 0.2 s (block 48830250 at 1792687918, block 48830350 at 1792687938), so five minutes is about 1,500 blocks. The branch now queries 100 blocks at a time.
 - `fork-chain-fallback-reconcile-20261022T163907Z` (3a93dd5): when the receipt of the transaction found was still unavailable, the retry answered 500 and the hash was lost (the 60 s restart row). It now answers 202 with that hash.
 - `fork-chain-fallback-reconcile-20261022T164520Z` and `fork-chain-fallback-default-20261022T164812Z` (aa89172): the same facilitator code as a15d29a, which only rewords the documentation of the option and adds the unit test above. Those runs had no copies rows, and the documentation said that servers which verify before settling are not affected. The `copies-*` rows show that this holds only for a copy that arrives after the settlement has landed.
+- `fork-chain-fallback-clamp-logs1000-20261023T202154Z` (815259b): the same rows and outcomes as the ef0e0ff run above. ef0e0ff differs from it only in how one line computes half of a refused range, rewritten for a clippy lint, with the same result.
 
 ## Run it
 
@@ -122,6 +150,8 @@ RUN=$(COMPOSE_OVERRIDE=docker-compose.restart.yml FACILITATOR_CONFIG=facilitator
 python pending_test.py --run-dir "$RUN" --label chain-fallback-reconcile --scenarios control,receipt-503-15s,receipt-503-15s-restart,receipt-503-60s-restart,settle-replay,copies-at-once,copies-at-once,copies-at-once,copies-during-work
 ./fork_down.sh "$RUN"
 python summarize_pending.py "$RUN" && python facilitator_answers.py "$RUN"
+# The range-limit run: the same with FACILITATOR_CONFIG=facilitator-fork-reconcile-logs1000.json, the label
+# chain-fallback-clamp-logs1000 and --scenarios control,receipt-503-15s-restart,receipt-503-60s-restart,settle-replay
 ```
 
 Without `FACILITATOR_CONFIG` the facilitator runs with the option off. `settle_lb.py` restarts the facilitator through the Docker Engine socket, which `docker-compose.restart.yml` mounts into its container, so run it on a machine you own; its control endpoint is 127.0.0.1:19454.

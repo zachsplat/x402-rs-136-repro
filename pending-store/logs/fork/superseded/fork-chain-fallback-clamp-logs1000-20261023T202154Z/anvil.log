@@ -1,0 +1,632 @@
+anvil-1  | 2026-10-23T20:21:58.199070351Z 
+anvil-1  | 2026-10-23T20:21:58.199109316Z 
+anvil-1  | 2026-10-23T20:21:58.199112283Z                              _   _
+anvil-1  | 2026-10-23T20:21:58.199114137Z                             (_) | |
+anvil-1  | 2026-10-23T20:21:58.199115922Z       __ _   _ __   __   __  _  | |
+anvil-1  | 2026-10-23T20:21:58.199117523Z      / _` | | '_ \  \ \ / / | | | |
+anvil-1  | 2026-10-23T20:21:58.199119289Z     | (_| | | | | |  \ V /  | | | |
+anvil-1  | 2026-10-23T20:21:58.199120961Z      \__,_| |_| |_|   \_/   |_| |_|
+anvil-1  | 2026-10-23T20:21:58.199122663Z 
+anvil-1  | 2026-10-23T20:21:58.199124136Z     1.8.1 (982849d314 2026-08-28T17:47:51.123690936Z)
+anvil-1  | 2026-10-23T20:21:58.199125814Z     https://github.com/foundry-rs/foundry
+anvil-1  | 2026-10-23T20:21:58.199127435Z 
+anvil-1  | 2026-10-23T20:21:58.199128891Z Available Accounts
+anvil-1  | 2026-10-23T20:21:58.199130406Z ==================
+anvil-1  | 2026-10-23T20:21:58.199132023Z 
+anvil-1  | 2026-10-23T20:21:58.199133573Z (0) 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199135362Z (1) 0x70997970C51812dc3A010C7d01b50e0d17dc79C8 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199137044Z (2) 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199138777Z (3) 0x90F79bf6EB2c4f870365E785982E1f101E93b906 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199140438Z (4) 0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199142145Z (5) 0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199143869Z (6) 0x976EA74026E726554dB657fA54763abd0C3a0aa9 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199145587Z (7) 0x14dC79964da2C08b23698B3D3cc7Ca32193d9955 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199147232Z (8) 0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199148856Z (9) 0xa0Ee7A142d267C1f36714E4a8F75612F20a79720 (10000.000000000000000000 ETH)
+anvil-1  | 2026-10-23T20:21:58.199150564Z 
+anvil-1  | 2026-10-23T20:21:58.199185311Z 
+anvil-1  | 2026-10-23T20:21:58.199186850Z 
+anvil-1  | 2026-10-23T20:21:58.199188380Z Fork
+anvil-1  | 2026-10-23T20:21:58.199189979Z ==================
+anvil-1  | 2026-10-23T20:21:58.199192225Z Endpoint:       https://sepolia.base.org/
+anvil-1  | 2026-10-23T20:21:58.199194074Z Block number:   49325234
+anvil-1  | 2026-10-23T20:21:58.199195685Z Block hash:     0x8243cf9662700fa0867d8292e7f9c5479495a5c222aa2146152d4ac9c5055371
+anvil-1  | 2026-10-23T20:21:58.199197435Z Chain ID:       84532
+anvil-1  | 2026-10-23T20:21:58.199199114Z 
+anvil-1  | 2026-10-23T20:21:58.199200477Z Base Fee
+anvil-1  | 2026-10-23T20:21:58.199202049Z ==================
+anvil-1  | 2026-10-23T20:21:58.199203623Z 
+anvil-1  | 2026-10-23T20:21:58.199205195Z 5000000
+anvil-1  | 2026-10-23T20:21:58.199206752Z 
+anvil-1  | 2026-10-23T20:21:58.199208268Z Gas Limit
+anvil-1  | 2026-10-23T20:21:58.199209854Z ==================
+anvil-1  | 2026-10-23T20:21:58.199211860Z 
+anvil-1  | 2026-10-23T20:21:58.199213241Z 120000000
+anvil-1  | 2026-10-23T20:21:58.199214705Z 
+anvil-1  | 2026-10-23T20:21:58.199216192Z Genesis Timestamp
+anvil-1  | 2026-10-23T20:21:58.199217644Z ==================
+anvil-1  | 2026-10-23T20:21:58.199219200Z 
+anvil-1  | 2026-10-23T20:21:58.199220680Z 1792786918
+anvil-1  | 2026-10-23T20:21:58.199222185Z 
+anvil-1  | 2026-10-23T20:21:58.199223684Z Genesis Number
+anvil-1  | 2026-10-23T20:21:58.199225127Z ==================
+anvil-1  | 2026-10-23T20:21:58.199226659Z 
+anvil-1  | 2026-10-23T20:21:58.199228189Z 0
+anvil-1  | 2026-10-23T20:21:58.199229690Z 
+anvil-1  | 2026-10-23T20:21:58.199231168Z Listening on 0.0.0.0:8545
+anvil-1  | 2026-10-23T20:22:00.200506069Z 
+anvil-1  | 2026-10-23T20:22:00.200525233Z     Block Number: 49325235
+anvil-1  | 2026-10-23T20:22:00.200526812Z     Block Hash: 0x42ebb1f56451464277fcfdf0eca0145f19b21d2b95531b6b2024ca70501e6195
+anvil-1  | 2026-10-23T20:22:00.200528155Z     Block Time: "Fri, 23 Oct 2026 20:22:00 +0000"
+anvil-1  | 2026-10-23T20:22:00.200529536Z 
+anvil-1  | 2026-10-23T20:22:00.274617282Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:00.610126315Z eth_getCode
+anvil-1  | 2026-10-23T20:22:00.685965275Z eth_getCode
+anvil-1  | 2026-10-23T20:22:00.759027507Z eth_getCode
+anvil-1  | 2026-10-23T20:22:01.446898751Z anvil_setBalance
+anvil-1  | 2026-10-23T20:22:01.516815300Z anvil_setStorageAt
+anvil-1  | 2026-10-23T20:22:01.600536336Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:01.605461719Z eth_getBalance
+anvil-1  | 2026-10-23T20:22:01.613982269Z eth_call
+anvil-1  | 2026-10-23T20:22:02.409005614Z 
+anvil-1  | 2026-10-23T20:22:02.409027537Z     Block Number: 49325236
+anvil-1  | 2026-10-23T20:22:02.409030459Z     Block Hash: 0xca2ad6bd7ef17f90a1e3b9464019540c3525bdade82b8b649d833ad447e69f11
+anvil-1  | 2026-10-23T20:22:02.409033043Z     Block Time: "Fri, 23 Oct 2026 20:22:02 +0000"
+anvil-1  | 2026-10-23T20:22:02.409035472Z 
+anvil-1  | 2026-10-23T20:22:02.414128737Z eth_call
+anvil-1  | 2026-10-23T20:22:02.589977302Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:04.199783599Z 
+anvil-1  | 2026-10-23T20:22:04.199805119Z     Block Number: 49325237
+anvil-1  | 2026-10-23T20:22:04.199806696Z     Block Hash: 0xf1d6f9f6c193b5ca4aa89fda8661c88498b097e999f00cc6bd6e7e0b39724e53
+anvil-1  | 2026-10-23T20:22:04.199808031Z     Block Time: "Fri, 23 Oct 2026 20:22:04 +0000"
+anvil-1  | 2026-10-23T20:22:04.199809405Z 
+anvil-1  | 2026-10-23T20:22:04.896688248Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:06.199753429Z 
+anvil-1  | 2026-10-23T20:22:06.199781397Z     Block Number: 49325238
+anvil-1  | 2026-10-23T20:22:06.199784213Z     Block Hash: 0x97f08a39fe6e02048c5ab340a2e8b1e29089fabc6c60a6a5a4ae6cc0bfbd48c3
+anvil-1  | 2026-10-23T20:22:06.199786419Z     Block Time: "Fri, 23 Oct 2026 20:22:06 +0000"
+anvil-1  | 2026-10-23T20:22:06.199788484Z 
+anvil-1  | 2026-10-23T20:22:07.249377777Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:08.200161432Z 
+anvil-1  | 2026-10-23T20:22:08.200176047Z     Block Number: 49325239
+anvil-1  | 2026-10-23T20:22:08.200177713Z     Block Hash: 0x427136e58985f005d7a3804cee747ee032118d562b4c714ed2c56b9e73aacdfe
+anvil-1  | 2026-10-23T20:22:08.200179096Z     Block Time: "Fri, 23 Oct 2026 20:22:08 +0000"
+anvil-1  | 2026-10-23T20:22:08.200180459Z 
+anvil-1  | 2026-10-23T20:22:08.237216734Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:08.241949952Z eth_call
+anvil-1  | 2026-10-23T20:22:08.247333031Z eth_call
+anvil-1  | 2026-10-23T20:22:08.799602691Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:08.831867176Z eth_call
+anvil-1  | 2026-10-23T20:22:08.852573788Z eth_call
+anvil-1  | 2026-10-23T20:22:09.251061282Z eth_call
+anvil-1  | 2026-10-23T20:22:09.271287039Z eth_estimateGas
+anvil-1  | 2026-10-23T20:22:09.291258411Z eth_feeHistory
+anvil-1  | 2026-10-23T20:22:09.311437563Z eth_getTransactionCount
+anvil-1  | 2026-10-23T20:22:09.331663558Z eth_chainId
+anvil-1  | 2026-10-23T20:22:09.355749542Z eth_sendRawTransaction
+anvil-1  | 2026-10-23T20:22:09.375923392Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:22:09.436767913Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:09.456741624Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:09.477081234Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:09.497555519Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:22:09.557117633Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:10.200886599Z 
+anvil-1  | 2026-10-23T20:22:10.200965037Z     Transaction: 0x4d5be50e8993059224643b25c4d8da295020bcd958b447070f87094b15b6308a
+anvil-1  | 2026-10-23T20:22:10.200972472Z     Gas used: 102816
+anvil-1  | 2026-10-23T20:22:10.200976130Z 
+anvil-1  | 2026-10-23T20:22:10.200979660Z     Block Number: 49325240
+anvil-1  | 2026-10-23T20:22:10.200983057Z     Block Hash: 0x1d82eeacf7f0786e8ffb893f4e8b71663b4a72b0044a8f9534856f19ba9dbbfd
+anvil-1  | 2026-10-23T20:22:10.200986692Z     Block Time: "Fri, 23 Oct 2026 20:22:10 +0000"
+anvil-1  | 2026-10-23T20:22:10.200989501Z 
+anvil-1  | 2026-10-23T20:22:11.895697705Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:12.200202564Z 
+anvil-1  | 2026-10-23T20:22:12.200215455Z     Block Number: 49325241
+anvil-1  | 2026-10-23T20:22:12.200217581Z     Block Hash: 0x919dcf61b015fd34ce9d3dbff7194eb49a344d2087f7f8db9d1b6875e3a224e3
+anvil-1  | 2026-10-23T20:22:12.200219393Z     Block Time: "Fri, 23 Oct 2026 20:22:12 +0000"
+anvil-1  | 2026-10-23T20:22:12.200221174Z 
+anvil-1  | 2026-10-23T20:22:14.200513821Z 
+anvil-1  | 2026-10-23T20:22:14.200538852Z     Block Number: 49325242
+anvil-1  | 2026-10-23T20:22:14.200542839Z     Block Hash: 0x78b44ea7bffe069a4c891a4ec532d693e74201244ec2564fbfad3c62d5995b4c
+anvil-1  | 2026-10-23T20:22:14.200546476Z     Block Time: "Fri, 23 Oct 2026 20:22:14 +0000"
+anvil-1  | 2026-10-23T20:22:14.200549536Z 
+anvil-1  | 2026-10-23T20:22:14.366503422Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:16.200479198Z 
+anvil-1  | 2026-10-23T20:22:16.200504887Z     Block Number: 49325243
+anvil-1  | 2026-10-23T20:22:16.200507656Z     Block Hash: 0x00f659f3cb8494ac888b6794b46c7b02f47b3707c96568ac344d212ba0618af1
+anvil-1  | 2026-10-23T20:22:16.200510196Z     Block Time: "Fri, 23 Oct 2026 20:22:16 +0000"
+anvil-1  | 2026-10-23T20:22:16.200512620Z 
+anvil-1  | 2026-10-23T20:22:16.438093670Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:22:16.452913538Z eth_call
+anvil-1  | 2026-10-23T20:22:16.453156367Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:16.459623729Z eth_call
+anvil-1  | 2026-10-23T20:22:16.464600834Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:16.486399442Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:16.506016251Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:16.524490601Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:16.547635437Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:16.625142364Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:16.640778984Z eth_call
+anvil-1  | 2026-10-23T20:22:16.653585631Z eth_call
+anvil-1  | 2026-10-23T20:22:16.696000474Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:16.696995810Z eth_call
+anvil-1  | 2026-10-23T20:22:16.706462961Z eth_call
+anvil-1  | 2026-10-23T20:22:16.791493140Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:17.374306495Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:17.413557356Z eth_call
+anvil-1  | 2026-10-23T20:22:17.435815413Z eth_call
+anvil-1  | 2026-10-23T20:22:17.510001418Z eth_call
+anvil-1  | 2026-10-23T20:22:17.529530209Z eth_estimateGas
+anvil-1  | 2026-10-23T20:22:17.549047252Z eth_feeHistory
+anvil-1  | 2026-10-23T20:22:17.615591635Z eth_sendRawTransaction
+anvil-1  | 2026-10-23T20:22:18.200784524Z 
+anvil-1  | 2026-10-23T20:22:18.200815605Z     Transaction: 0x6ada838dfcc81499c29ff87d332348535ac746d6093eaf2f6a67fdb4496306a1
+anvil-1  | 2026-10-23T20:22:18.200818937Z     Gas used: 85740
+anvil-1  | 2026-10-23T20:22:18.200820843Z 
+anvil-1  | 2026-10-23T20:22:18.200822497Z     Block Number: 49325244
+anvil-1  | 2026-10-23T20:22:18.200824357Z     Block Hash: 0xfe6e35b93827d0776193d1353a2290c1ad712fcd145ea537bc9e74f01ae580d2
+anvil-1  | 2026-10-23T20:22:18.200826271Z     Block Time: "Fri, 23 Oct 2026 20:22:18 +0000"
+anvil-1  | 2026-10-23T20:22:18.200828206Z 
+anvil-1  | 2026-10-23T20:22:19.173004524Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:20.199929413Z 
+anvil-1  | 2026-10-23T20:22:20.199949882Z     Block Number: 49325245
+anvil-1  | 2026-10-23T20:22:20.199951644Z     Block Hash: 0x762f66b38c463890ef26f26d861a0f6b9155204690e4e91b6f6cd21ebdb353d3
+anvil-1  | 2026-10-23T20:22:20.199953035Z     Block Time: "Fri, 23 Oct 2026 20:22:20 +0000"
+anvil-1  | 2026-10-23T20:22:20.199954393Z 
+anvil-1  | 2026-10-23T20:22:21.613666272Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:22.201487215Z 
+anvil-1  | 2026-10-23T20:22:22.201515652Z     Block Number: 49325246
+anvil-1  | 2026-10-23T20:22:22.201519144Z     Block Hash: 0x1ad5fc0f8d177fec8a0aa66527cf30350ac4074a84da11790f6cedeb5e2038a2
+anvil-1  | 2026-10-23T20:22:22.201521413Z     Block Time: "Fri, 23 Oct 2026 20:22:22 +0000"
+anvil-1  | 2026-10-23T20:22:22.201523440Z 
+anvil-1  | 2026-10-23T20:22:23.978571069Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:24.200363697Z 
+anvil-1  | 2026-10-23T20:22:24.200386886Z     Block Number: 49325247
+anvil-1  | 2026-10-23T20:22:24.200390018Z     Block Hash: 0x0bda6aea1306399f7ab3158f5e47231072d52519600bc8e8bc4907fd38336096
+anvil-1  | 2026-10-23T20:22:24.200392308Z     Block Time: "Fri, 23 Oct 2026 20:22:24 +0000"
+anvil-1  | 2026-10-23T20:22:24.200394425Z 
+anvil-1  | 2026-10-23T20:22:24.965471434Z eth_getCode
+anvil-1  | 2026-10-23T20:22:24.984838307Z eth_getCode
+anvil-1  | 2026-10-23T20:22:25.006489703Z eth_getCode
+anvil-1  | 2026-10-23T20:22:25.214822100Z eth_call
+anvil-1  | 2026-10-23T20:22:25.235583798Z eth_estimateGas
+anvil-1  | 2026-10-23T20:22:25.235759813Z 
+anvil-1  | 2026-10-23T20:22:25.235768771Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:25.235782238Z     Request: EthEstimateGas(WithOtherFields { inner: TransactionRequest { from: Some(0x3dff5869bce42aa7695b8290dc2b6ff4e05b55e2), to: Some(Call(0x036cbd53842c5426634e7929541ec2318f3dcf7e)), gas_price: None, max_fee_per_gas: None, max_priority_fee_per_gas: None, max_fee_per_blob_gas: None, gas: None, value: None, input: TransactionInput { input: Some(0xe3ee160e0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac0000000000000000000000008a84ac525faa54e28991403cf9410d854857455600000000000000000000000000000000000000000000000000000000000027100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006adbc32551fb059ca5eb7c9cba43382b1f1a43736501f738cbfdf84e6f0dcf235e98b83e000000000000000000000000000000000000000000000000000000000000001c1b84f52b99a92af52f941490a85d99a3a755424270ceb84bc3f5c41d7a8bc66d1a2233ec5f37bd3b3091dcbbe06cb5dc9e18186d4b9aa381dea32bd4c4b9b4bb), data: None }, nonce: None, chain_id: None, access_list: None, transaction_type: None, blob_versioned_hashes: None, sidecar: None, authorization_list: None }, other: OtherFields {} }, Some(pending), None, None)
+anvil-1  | 2026-10-23T20:22:25.235784675Z     Error: Execution error: execution reverted: FiatTokenV2: authorization is used or canceled
+anvil-1  | 2026-10-23T20:22:25.235785648Z 
+anvil-1  | 2026-10-23T20:22:25.259540191Z eth_call
+anvil-1  | 2026-10-23T20:22:25.275831227Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:25.297442484Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:25.365036412Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:25.426614032Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:25.494612897Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:25.569503724Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:25.624266539Z 
+anvil-1  | 2026-10-23T20:22:25.624290965Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:25.624294167Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a0d8), to_block: Some(0x2f0a4bf) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x51fb059ca5eb7c9cba43382b1f1a43736501f738cbfdf84e6f0dcf235e98b83e}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:25.624296954Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":109,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f37429d8466c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=M7OWxQe%2BA9DaKpd1CFZXWUvBZVtTwPmMKPNVBO0ZCZb1q8YKVjOY1VIStDXbo%2F3%2FhseDHGCVMt%2B02krK9VCK1PnwTxTHNUJNTsuCvV3%2BZGBSVTZKCINz9dlFdTZVb0cOOrK6w2qczJs7aA%2BWcr2zlJhEEkaNxsdrYjy%2F%2FqgEglEmow%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:25.624300701Z 
+anvil-1  | 2026-10-23T20:22:25.625753509Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:25.685646232Z 
+anvil-1  | 2026-10-23T20:22:25.685665520Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:25.685675785Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a2cc), to_block: Some(0x2f0a4bf) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x51fb059ca5eb7c9cba43382b1f1a43736501f738cbfdf84e6f0dcf235e98b83e}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:25.685678096Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":110,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f3742a38b16c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8KNmOp%2FEjRtbPjKDaxdIaZMyR6bn22RhiXTK39cREHAPpj7uqXSfThG0%2FPltfcx7mkY2m6iPlniM4zYK9DzCH5nfKLAp4If14pZmXteEEYdF%2FYVJQobesmI2nE4XZwFe%2BSw8rCxguT6IZTTH%2BFWneWQdUwoh36Olykyv6PjG9KluEA%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:25.685680903Z 
+anvil-1  | 2026-10-23T20:22:25.687067600Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:25.751196352Z 
+anvil-1  | 2026-10-23T20:22:25.751215854Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:25.751219604Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a3c6), to_block: Some(0x2f0a4bf) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x51fb059ca5eb7c9cba43382b1f1a43736501f738cbfdf84e6f0dcf235e98b83e}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:25.751224484Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":111,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f3742aa9176c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=K9ljgy8PosikQlQtmHxnMwu1URb1%2B0SAYL8NJ8D7%2B3jenVT2yp3WiCkGWxMS0kUAgso7XA8dgPQw7nIQr0%2BKX3v%2BSVjBGBBfK9tyPHwNT4ENMHzDjpgnJ9iOywILVvh%2FmD9cy5IK4mS6lg6U8mmwuw1pzzMOKxucyS5zAzV%2B9R508w%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:25.751229226Z 
+anvil-1  | 2026-10-23T20:22:25.753150653Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:26.202492414Z 
+anvil-1  | 2026-10-23T20:22:26.202520250Z     Block Number: 49325248
+anvil-1  | 2026-10-23T20:22:26.202523013Z     Block Hash: 0xed50c0b96b315eef736a0ca8be5d6352a8d5ebafe4ec763a663e465e2d1e1587
+anvil-1  | 2026-10-23T20:22:26.202524724Z     Block Time: "Fri, 23 Oct 2026 20:22:26 +0000"
+anvil-1  | 2026-10-23T20:22:26.202536708Z 
+anvil-1  | 2026-10-23T20:22:26.364738511Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:28.203478394Z 
+anvil-1  | 2026-10-23T20:22:28.203504584Z     Block Number: 49325249
+anvil-1  | 2026-10-23T20:22:28.203506725Z     Block Hash: 0x67ede3c5ba5077f0fde709a29b933f18b024838018cc9f54680e309c7a5972f5
+anvil-1  | 2026-10-23T20:22:28.203508671Z     Block Time: "Fri, 23 Oct 2026 20:22:28 +0000"
+anvil-1  | 2026-10-23T20:22:28.203510521Z 
+anvil-1  | 2026-10-23T20:22:28.778904160Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:30.201472387Z 
+anvil-1  | 2026-10-23T20:22:30.201496247Z     Block Number: 49325250
+anvil-1  | 2026-10-23T20:22:30.201498256Z     Block Hash: 0xb6d6fefb20eed5a5e541f73d0ffd3c4dd926bb3cc43fdc75fb27604b4cabe430
+anvil-1  | 2026-10-23T20:22:30.201500094Z     Block Time: "Fri, 23 Oct 2026 20:22:30 +0000"
+anvil-1  | 2026-10-23T20:22:30.201501937Z 
+anvil-1  | 2026-10-23T20:22:31.203277209Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:32.199680715Z 
+anvil-1  | 2026-10-23T20:22:32.199703986Z     Block Number: 49325251
+anvil-1  | 2026-10-23T20:22:32.199705773Z     Block Hash: 0x5c7111da582050e1999272c6ebc07431c93be80d5e426565939aaf89134a9dcc
+anvil-1  | 2026-10-23T20:22:32.199707171Z     Block Time: "Fri, 23 Oct 2026 20:22:32 +0000"
+anvil-1  | 2026-10-23T20:22:32.199708544Z 
+anvil-1  | 2026-10-23T20:22:32.851364902Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:22:32.861957154Z eth_call
+anvil-1  | 2026-10-23T20:22:32.862599711Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:32.867915848Z eth_call
+anvil-1  | 2026-10-23T20:22:33.570904361Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:34.199680228Z 
+anvil-1  | 2026-10-23T20:22:34.199706165Z     Block Number: 49325252
+anvil-1  | 2026-10-23T20:22:34.199708066Z     Block Hash: 0x41d4c63121685edccf68e5c01998a3f42c3bc12473e5f017817a79374ffac446
+anvil-1  | 2026-10-23T20:22:34.199709517Z     Block Time: "Fri, 23 Oct 2026 20:22:34 +0000"
+anvil-1  | 2026-10-23T20:22:34.199710916Z 
+anvil-1  | 2026-10-23T20:22:35.900281024Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:36.199632036Z 
+anvil-1  | 2026-10-23T20:22:36.199649309Z     Block Number: 49325253
+anvil-1  | 2026-10-23T20:22:36.199652064Z     Block Hash: 0x6d88b11a73cef10d33c411e2a9a4b881b8672f837b8b15e2d9c9ebb39be468cd
+anvil-1  | 2026-10-23T20:22:36.199654522Z     Block Time: "Fri, 23 Oct 2026 20:22:36 +0000"
+anvil-1  | 2026-10-23T20:22:36.199656485Z 
+anvil-1  | 2026-10-23T20:22:38.199711988Z 
+anvil-1  | 2026-10-23T20:22:38.199739244Z     Block Number: 49325254
+anvil-1  | 2026-10-23T20:22:38.199742027Z     Block Hash: 0x77abef297d26cdc598c08d946ac652f976867f81402e573da0721b2f451d8f76
+anvil-1  | 2026-10-23T20:22:38.199744330Z     Block Time: "Fri, 23 Oct 2026 20:22:38 +0000"
+anvil-1  | 2026-10-23T20:22:38.199746275Z 
+anvil-1  | 2026-10-23T20:22:38.237739290Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:39.070029931Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:39.076955179Z eth_call
+anvil-1  | 2026-10-23T20:22:39.085125723Z eth_call
+anvil-1  | 2026-10-23T20:22:39.116593203Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:39.122487483Z eth_call
+anvil-1  | 2026-10-23T20:22:39.130358735Z eth_call
+anvil-1  | 2026-10-23T20:22:39.689104668Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:39.722740043Z eth_call
+anvil-1  | 2026-10-23T20:22:39.743141533Z eth_call
+anvil-1  | 2026-10-23T20:22:39.815664956Z eth_call
+anvil-1  | 2026-10-23T20:22:39.835974300Z eth_estimateGas
+anvil-1  | 2026-10-23T20:22:39.855803598Z eth_feeHistory
+anvil-1  | 2026-10-23T20:22:39.876060613Z eth_getTransactionCount
+anvil-1  | 2026-10-23T20:22:39.896357282Z eth_chainId
+anvil-1  | 2026-10-23T20:22:39.916354637Z eth_sendRawTransaction
+anvil-1  | 2026-10-23T20:22:40.199967392Z 
+anvil-1  | 2026-10-23T20:22:40.200004544Z     Transaction: 0xaaefa0ee27914d7917860b1001c4321d7b2f13acdd22d804391167fe4e32d346
+anvil-1  | 2026-10-23T20:22:40.200009875Z     Gas used: 85720
+anvil-1  | 2026-10-23T20:22:40.200012075Z 
+anvil-1  | 2026-10-23T20:22:40.200014382Z     Block Number: 49325255
+anvil-1  | 2026-10-23T20:22:40.200016468Z     Block Hash: 0xa74a4bf99f256009eae91a56f3ea6781caf2f8fe3ea098157c01006dec45e1ca
+anvil-1  | 2026-10-23T20:22:40.200018586Z     Block Time: "Fri, 23 Oct 2026 20:22:40 +0000"
+anvil-1  | 2026-10-23T20:22:40.200021385Z 
+anvil-1  | 2026-10-23T20:22:40.629005071Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:42.199734703Z 
+anvil-1  | 2026-10-23T20:22:42.199756447Z     Block Number: 49325256
+anvil-1  | 2026-10-23T20:22:42.199758312Z     Block Hash: 0xbb35f75ac0548b365e6d599f31466f70b239c5971f2bcc52ac352664eac64f22
+anvil-1  | 2026-10-23T20:22:42.199759730Z     Block Time: "Fri, 23 Oct 2026 20:22:42 +0000"
+anvil-1  | 2026-10-23T20:22:42.199761149Z 
+anvil-1  | 2026-10-23T20:22:42.983080505Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:44.199693835Z 
+anvil-1  | 2026-10-23T20:22:44.199721684Z     Block Number: 49325257
+anvil-1  | 2026-10-23T20:22:44.199725316Z     Block Hash: 0x327b9e68441322b9361e4d9ebb6a933f39d85f4526422b68cb290ea82ea2fa65
+anvil-1  | 2026-10-23T20:22:44.199727917Z     Block Time: "Fri, 23 Oct 2026 20:22:44 +0000"
+anvil-1  | 2026-10-23T20:22:44.199730043Z 
+anvil-1  | 2026-10-23T20:22:45.309988513Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:46.199705023Z 
+anvil-1  | 2026-10-23T20:22:46.199739475Z     Block Number: 49325258
+anvil-1  | 2026-10-23T20:22:46.199742985Z     Block Hash: 0x8b51247e67fb0520fa7a94135d2c5a3c04e4b2b4278948a7f1676501ce59d7f8
+anvil-1  | 2026-10-23T20:22:46.199745343Z     Block Time: "Fri, 23 Oct 2026 20:22:46 +0000"
+anvil-1  | 2026-10-23T20:22:46.199747535Z 
+anvil-1  | 2026-10-23T20:22:47.199111282Z eth_getCode
+anvil-1  | 2026-10-23T20:22:47.218951470Z eth_getCode
+anvil-1  | 2026-10-23T20:22:47.238925338Z eth_getCode
+anvil-1  | 2026-10-23T20:22:47.445177032Z eth_call
+anvil-1  | 2026-10-23T20:22:47.465277592Z eth_estimateGas
+anvil-1  | 2026-10-23T20:22:47.465500303Z 
+anvil-1  | 2026-10-23T20:22:47.465512178Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:47.465516361Z     Request: EthEstimateGas(WithOtherFields { inner: TransactionRequest { from: Some(0x3dff5869bce42aa7695b8290dc2b6ff4e05b55e2), to: Some(Call(0x036cbd53842c5426634e7929541ec2318f3dcf7e)), gas_price: None, max_fee_per_gas: None, max_priority_fee_per_gas: None, max_fee_per_blob_gas: None, gas: None, value: None, input: TransactionInput { input: Some(0xe3ee160e0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac0000000000000000000000008a84ac525faa54e28991403cf9410d854857455600000000000000000000000000000000000000000000000000000000000027100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006adbc33bad53fc2f015a0f057a2e2f313c9f757fb6407b198c44d0ebbc06a75b736a2e99000000000000000000000000000000000000000000000000000000000000001b73039cf712bb6b43e6cf4822647aec2d41cfe4ea4c730da07d2c4cc3d4bf5b5713ead0dc2eb47c01f141ff6a28794e2635252832c8533c2105d550c6e2dd0b96), data: None }, nonce: None, chain_id: None, access_list: None, transaction_type: None, blob_versioned_hashes: None, sidecar: None, authorization_list: None }, other: OtherFields {} }, Some(pending), None, None)
+anvil-1  | 2026-10-23T20:22:47.465521879Z     Error: Execution error: execution reverted: FiatTokenV2: authorization is used or canceled
+anvil-1  | 2026-10-23T20:22:47.465523447Z 
+anvil-1  | 2026-10-23T20:22:47.485421485Z eth_call
+anvil-1  | 2026-10-23T20:22:47.505497956Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:47.525811013Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:47.545987227Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:47.616143367Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:47.673168935Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:47.681968694Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:22:47.742149925Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:47.800883123Z 
+anvil-1  | 2026-10-23T20:22:47.800906166Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:47.800908752Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a0e3), to_block: Some(0x2f0a4ca) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0xad53fc2f015a0f057a2e2f313c9f757fb6407b198c44d0ebbc06a75b736a2e99}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:47.800911588Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":117,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f374b47bbd6c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DolMyYYqvdN2qR24k7nsEjs76lereRn9gak576eMTvT1DXRi2L1qy10Ex1PVjKw5zULeBWAQTAqGM2SCItPHQr1sGyJ1Q2DDEmzb%2BTYIjht%2BVSjrVr%2B7AAQ4Yw%2Bdfda0Nf705KZBrQa9jeotnlFedYmJx4Gzc9akJn4sLiMxfLYP5w%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:47.800926123Z 
+anvil-1  | 2026-10-23T20:22:47.802752462Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:47.863140428Z 
+anvil-1  | 2026-10-23T20:22:47.863166074Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:47.863168624Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a2d7), to_block: Some(0x2f0a4ca) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0xad53fc2f015a0f057a2e2f313c9f757fb6407b198c44d0ebbc06a75b736a2e99}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:47.863171915Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":118,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f374b4dc156c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zwSwASEoh6w3ICBANX5U3yMiuNlMslqu%2BMWYTeJJPX8KkKuW4acKO82HfnjJwRHP37AymcvojlNbP7ofYXPhurU9bd3NgKxhAH2mpuOT%2Bm6aKrLu1fnk1NI4qLsd0NGTmt8BJwIIrx0fGRgE9c6jbjiQBYMZuf%2BaLiZ15ojZdjS5gQ%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:47.863176591Z 
+anvil-1  | 2026-10-23T20:22:47.865035205Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:47.929498761Z 
+anvil-1  | 2026-10-23T20:22:47.929526208Z RPC request failed:
+anvil-1  | 2026-10-23T20:22:47.929533272Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a3d1), to_block: Some(0x2f0a4ca) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0xad53fc2f015a0f057a2e2f313c9f757fb6407b198c44d0ebbc06a75b736a2e99}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:22:47.929537826Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":119,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f374b53c666c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=23x54XuRsH%2B%2FbTDm4a2s468OyxfzdLupm52vdNOSQn%2FIUow29YaV279mjaueuANzr2CnK3xTQuCGUfC59gqj710Ssd1C0ZmRYYWgah1SmkBnBoGQFVkse1mN1Rq9x8%2Bcn%2BuaK5%2FziiPe2M0oE45mdEIp1l4T%2BAlI%2Byx1e1ZtaUMnJQ%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:22:47.929541679Z 
+anvil-1  | 2026-10-23T20:22:47.931390106Z eth_getLogs
+anvil-1  | 2026-10-23T20:22:48.199608664Z 
+anvil-1  | 2026-10-23T20:22:48.199628618Z     Block Number: 49325259
+anvil-1  | 2026-10-23T20:22:48.199630074Z     Block Hash: 0xbc5290dab5b84b9e38da0aba7b04713020a85bb6b2fe59a95e9912ce0729554c
+anvil-1  | 2026-10-23T20:22:48.199631135Z     Block Time: "Fri, 23 Oct 2026 20:22:48 +0000"
+anvil-1  | 2026-10-23T20:22:48.199632390Z 
+anvil-1  | 2026-10-23T20:22:50.022778398Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:50.200204792Z 
+anvil-1  | 2026-10-23T20:22:50.200230087Z     Block Number: 49325260
+anvil-1  | 2026-10-23T20:22:50.200232484Z     Block Hash: 0xc23434a433cb9584c9d8c866734cdb287125dc1e00ff7e0003029c05c60b76bc
+anvil-1  | 2026-10-23T20:22:50.200234321Z     Block Time: "Fri, 23 Oct 2026 20:22:50 +0000"
+anvil-1  | 2026-10-23T20:22:50.200236061Z 
+anvil-1  | 2026-10-23T20:22:52.199962277Z 
+anvil-1  | 2026-10-23T20:22:52.199992169Z     Block Number: 49325261
+anvil-1  | 2026-10-23T20:22:52.199994892Z     Block Hash: 0x18ce85ddcfc54a6bc424a985022969675752f635c75e58a31a0ca721e709f8f8
+anvil-1  | 2026-10-23T20:22:52.199997585Z     Block Time: "Fri, 23 Oct 2026 20:22:52 +0000"
+anvil-1  | 2026-10-23T20:22:52.199999659Z 
+anvil-1  | 2026-10-23T20:22:52.440636922Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:54.199779921Z 
+anvil-1  | 2026-10-23T20:22:54.199800906Z     Block Number: 49325262
+anvil-1  | 2026-10-23T20:22:54.199802512Z     Block Hash: 0x23134598a159b92fc42b78a3b060c1ef30e827dbab474d74ab35d24037b1e2b1
+anvil-1  | 2026-10-23T20:22:54.199803867Z     Block Time: "Fri, 23 Oct 2026 20:22:54 +0000"
+anvil-1  | 2026-10-23T20:22:54.199805235Z 
+anvil-1  | 2026-10-23T20:22:54.839897648Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:56.199707135Z 
+anvil-1  | 2026-10-23T20:22:56.199739895Z     Block Number: 49325263
+anvil-1  | 2026-10-23T20:22:56.199743472Z     Block Hash: 0x57ae7391829e7e3589c3787016947e61a6220ec6d29369f88d6d60dd1812a9b4
+anvil-1  | 2026-10-23T20:22:56.199745862Z     Block Time: "Fri, 23 Oct 2026 20:22:56 +0000"
+anvil-1  | 2026-10-23T20:22:56.199748204Z 
+anvil-1  | 2026-10-23T20:22:57.157809508Z eth_blockNumber
+anvil-1  | 2026-10-23T20:22:58.199652110Z 
+anvil-1  | 2026-10-23T20:22:58.199673111Z     Block Number: 49325264
+anvil-1  | 2026-10-23T20:22:58.199674791Z     Block Hash: 0x9b6212fc6e9aad66ebc746a3ee181e558f2e9570cb323ffe8a1f2082694292e4
+anvil-1  | 2026-10-23T20:22:58.199676162Z     Block Time: "Fri, 23 Oct 2026 20:22:58 +0000"
+anvil-1  | 2026-10-23T20:22:58.199677568Z 
+anvil-1  | 2026-10-23T20:22:59.452823277Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:00.199803334Z 
+anvil-1  | 2026-10-23T20:23:00.199844668Z     Block Number: 49325265
+anvil-1  | 2026-10-23T20:23:00.199847830Z     Block Hash: 0x9359ea4f72673fb26b01575dcad487c2a526efea445bf3e93ffb35e1cacecffb
+anvil-1  | 2026-10-23T20:23:00.199850470Z     Block Time: "Fri, 23 Oct 2026 20:23:00 +0000"
+anvil-1  | 2026-10-23T20:23:00.199852962Z 
+anvil-1  | 2026-10-23T20:23:01.753026614Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:02.199721874Z 
+anvil-1  | 2026-10-23T20:23:02.199739560Z     Block Number: 49325266
+anvil-1  | 2026-10-23T20:23:02.199740766Z     Block Hash: 0x77db18d9c91404838f1276d5dc626171b0c6a0284d521aa6f110ebc28917ff3e
+anvil-1  | 2026-10-23T20:23:02.199741786Z     Block Time: "Fri, 23 Oct 2026 20:23:02 +0000"
+anvil-1  | 2026-10-23T20:23:02.199742784Z 
+anvil-1  | 2026-10-23T20:23:04.007531587Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:04.199968636Z 
+anvil-1  | 2026-10-23T20:23:04.199988861Z     Block Number: 49325267
+anvil-1  | 2026-10-23T20:23:04.199990455Z     Block Hash: 0x70ac5bb1398457753377556a0261f21eb3c8e7407d6cd4ed8c8eaadeda366314
+anvil-1  | 2026-10-23T20:23:04.199991772Z     Block Time: "Fri, 23 Oct 2026 20:23:04 +0000"
+anvil-1  | 2026-10-23T20:23:04.199993123Z 
+anvil-1  | 2026-10-23T20:23:06.199976065Z 
+anvil-1  | 2026-10-23T20:23:06.199994901Z     Block Number: 49325268
+anvil-1  | 2026-10-23T20:23:06.199996490Z     Block Hash: 0xcf7b61a0eb387cbd39497b26c3c07ab636a27a16039094e60dd2add5d1170f22
+anvil-1  | 2026-10-23T20:23:06.199997866Z     Block Time: "Fri, 23 Oct 2026 20:23:06 +0000"
+anvil-1  | 2026-10-23T20:23:06.199999262Z 
+anvil-1  | 2026-10-23T20:23:06.259149884Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:08.200411504Z 
+anvil-1  | 2026-10-23T20:23:08.200430054Z     Block Number: 49325269
+anvil-1  | 2026-10-23T20:23:08.200434952Z     Block Hash: 0x1be9a3d193c596a224166ec91b5d04d31f834d403d0c15e0e0cb1e5c3dccf7a2
+anvil-1  | 2026-10-23T20:23:08.200439561Z     Block Time: "Fri, 23 Oct 2026 20:23:08 +0000"
+anvil-1  | 2026-10-23T20:23:08.200440986Z 
+anvil-1  | 2026-10-23T20:23:08.513325093Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:10.200271023Z 
+anvil-1  | 2026-10-23T20:23:10.200288986Z     Block Number: 49325270
+anvil-1  | 2026-10-23T20:23:10.200290496Z     Block Hash: 0x7f582b83be6648625cfe0fd046006c01998a39c7d0bf6dc9b7111b22df413c7f
+anvil-1  | 2026-10-23T20:23:10.200291826Z     Block Time: "Fri, 23 Oct 2026 20:23:10 +0000"
+anvil-1  | 2026-10-23T20:23:10.200293182Z 
+anvil-1  | 2026-10-23T20:23:10.767047142Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:12.199634024Z 
+anvil-1  | 2026-10-23T20:23:12.199650990Z     Block Number: 49325271
+anvil-1  | 2026-10-23T20:23:12.199652615Z     Block Hash: 0xfc18d3c6cceadfeb1bad22cfdaa20a4adbe4ab689a03123c8c740ed6f5cd95b8
+anvil-1  | 2026-10-23T20:23:12.199653948Z     Block Time: "Fri, 23 Oct 2026 20:23:12 +0000"
+anvil-1  | 2026-10-23T20:23:12.199655307Z 
+anvil-1  | 2026-10-23T20:23:13.018252044Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:14.199689356Z 
+anvil-1  | 2026-10-23T20:23:14.199712403Z     Block Number: 49325272
+anvil-1  | 2026-10-23T20:23:14.199715416Z     Block Hash: 0x854339462b138a2a44a70be507e4e6f496fd893da1449cc731f7ab831b799ace
+anvil-1  | 2026-10-23T20:23:14.199717749Z     Block Time: "Fri, 23 Oct 2026 20:23:14 +0000"
+anvil-1  | 2026-10-23T20:23:14.199719954Z 
+anvil-1  | 2026-10-23T20:23:15.305711166Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:16.199703758Z 
+anvil-1  | 2026-10-23T20:23:16.199721774Z     Block Number: 49325273
+anvil-1  | 2026-10-23T20:23:16.199723625Z     Block Hash: 0xb37ec8a88fb6509fc889bf6208e57bb273b1c5643ca2a6283912854831b45dc8
+anvil-1  | 2026-10-23T20:23:16.199725030Z     Block Time: "Fri, 23 Oct 2026 20:23:16 +0000"
+anvil-1  | 2026-10-23T20:23:16.199726458Z 
+anvil-1  | 2026-10-23T20:23:17.083734025Z eth_call
+anvil-1  | 2026-10-23T20:23:17.084047796Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:17.087270786Z eth_call
+anvil-1  | 2026-10-23T20:23:17.579340337Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:18.200319781Z 
+anvil-1  | 2026-10-23T20:23:18.200335319Z     Block Number: 49325274
+anvil-1  | 2026-10-23T20:23:18.200336907Z     Block Hash: 0x820a3ffe5a4a153df6ff9f96267a67202fa2a794ca1b18f3083a817cb7530595
+anvil-1  | 2026-10-23T20:23:18.200338239Z     Block Time: "Fri, 23 Oct 2026 20:23:18 +0000"
+anvil-1  | 2026-10-23T20:23:18.200339578Z 
+anvil-1  | 2026-10-23T20:23:19.837900000Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:20.200349037Z 
+anvil-1  | 2026-10-23T20:23:20.200362603Z     Block Number: 49325275
+anvil-1  | 2026-10-23T20:23:20.200364308Z     Block Hash: 0x1c3ac1655001baf228c854f94e085c47ee8d729916099ca1fe288bb47e47a5b8
+anvil-1  | 2026-10-23T20:23:20.200365691Z     Block Time: "Fri, 23 Oct 2026 20:23:20 +0000"
+anvil-1  | 2026-10-23T20:23:20.200367075Z 
+anvil-1  | 2026-10-23T20:23:22.118125483Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:22.200371391Z 
+anvil-1  | 2026-10-23T20:23:22.200385628Z     Block Number: 49325276
+anvil-1  | 2026-10-23T20:23:22.200387480Z     Block Hash: 0x2c11d3232cf54bfa07f4f157d26877114fb41591331f1386fd04894575505e0c
+anvil-1  | 2026-10-23T20:23:22.200388923Z     Block Time: "Fri, 23 Oct 2026 20:23:22 +0000"
+anvil-1  | 2026-10-23T20:23:22.200390283Z 
+anvil-1  | 2026-10-23T20:23:24.199759856Z 
+anvil-1  | 2026-10-23T20:23:24.199806990Z     Block Number: 49325277
+anvil-1  | 2026-10-23T20:23:24.199812092Z     Block Hash: 0xcc6f91d2ba7b2be2e3effd68af291d94224371b043993776eaef8f15cbb38339
+anvil-1  | 2026-10-23T20:23:24.199814668Z     Block Time: "Fri, 23 Oct 2026 20:23:24 +0000"
+anvil-1  | 2026-10-23T20:23:24.199817720Z 
+anvil-1  | 2026-10-23T20:23:24.591360189Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:26.199561462Z 
+anvil-1  | 2026-10-23T20:23:26.199573236Z     Block Number: 49325278
+anvil-1  | 2026-10-23T20:23:26.199575026Z     Block Hash: 0xa27da555796e7341f42affe74061a7b41084dd0df0805af0443af13c678363cd
+anvil-1  | 2026-10-23T20:23:26.199576438Z     Block Time: "Fri, 23 Oct 2026 20:23:26 +0000"
+anvil-1  | 2026-10-23T20:23:26.199577898Z 
+anvil-1  | 2026-10-23T20:23:26.858660339Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:28.199763297Z 
+anvil-1  | 2026-10-23T20:23:28.199781621Z     Block Number: 49325279
+anvil-1  | 2026-10-23T20:23:28.199783142Z     Block Hash: 0x16bf1b0a8bd768ee5a75e62e22a38fb88b4ddf7a0a88fd6cce2219765a66ed52
+anvil-1  | 2026-10-23T20:23:28.199790924Z     Block Time: "Fri, 23 Oct 2026 20:23:28 +0000"
+anvil-1  | 2026-10-23T20:23:28.199792243Z 
+anvil-1  | 2026-10-23T20:23:29.132811241Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:30.199731003Z 
+anvil-1  | 2026-10-23T20:23:30.199747776Z     Block Number: 49325280
+anvil-1  | 2026-10-23T20:23:30.199748915Z     Block Hash: 0xcec2069cf7d492b9e076dc5adce7fd601416db2e1cb0a80b24d9a4abc41380d7
+anvil-1  | 2026-10-23T20:23:30.199749899Z     Block Time: "Fri, 23 Oct 2026 20:23:30 +0000"
+anvil-1  | 2026-10-23T20:23:30.199750944Z 
+anvil-1  | 2026-10-23T20:23:31.395680402Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:32.199691876Z 
+anvil-1  | 2026-10-23T20:23:32.199713581Z     Block Number: 49325281
+anvil-1  | 2026-10-23T20:23:32.199715309Z     Block Hash: 0x00ab0b75fe2bd9f464454231a44380d148a66b30ac9046b2d514fb6c00036333
+anvil-1  | 2026-10-23T20:23:32.199717042Z     Block Time: "Fri, 23 Oct 2026 20:23:32 +0000"
+anvil-1  | 2026-10-23T20:23:32.199718737Z 
+anvil-1  | 2026-10-23T20:23:33.652794153Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:34.200731039Z 
+anvil-1  | 2026-10-23T20:23:34.200749224Z     Block Number: 49325282
+anvil-1  | 2026-10-23T20:23:34.200750743Z     Block Hash: 0xd19623faf478ee3abbc6cbf8248b4152892804eeacf1c633441fe9e77814d666
+anvil-1  | 2026-10-23T20:23:34.200752101Z     Block Time: "Fri, 23 Oct 2026 20:23:34 +0000"
+anvil-1  | 2026-10-23T20:23:34.200753617Z 
+anvil-1  | 2026-10-23T20:23:35.908922090Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:36.200478855Z 
+anvil-1  | 2026-10-23T20:23:36.200499787Z     Block Number: 49325283
+anvil-1  | 2026-10-23T20:23:36.200502382Z     Block Hash: 0x42cbaebb1cd7787cf665729ecc7956b3de86194cb9382e7c5edc292b7320b770
+anvil-1  | 2026-10-23T20:23:36.200504642Z     Block Time: "Fri, 23 Oct 2026 20:23:36 +0000"
+anvil-1  | 2026-10-23T20:23:36.200507015Z 
+anvil-1  | 2026-10-23T20:23:38.179868093Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:38.200070973Z 
+anvil-1  | 2026-10-23T20:23:38.200088216Z     Block Number: 49325284
+anvil-1  | 2026-10-23T20:23:38.200089914Z     Block Hash: 0x92484d7ddf65585ea2ce5588a051c65eb291aa82c6ee6aaf719a6ee91b537ae8
+anvil-1  | 2026-10-23T20:23:38.200091331Z     Block Time: "Fri, 23 Oct 2026 20:23:38 +0000"
+anvil-1  | 2026-10-23T20:23:38.200092768Z 
+anvil-1  | 2026-10-23T20:23:40.199610754Z 
+anvil-1  | 2026-10-23T20:23:40.199628514Z     Block Number: 49325285
+anvil-1  | 2026-10-23T20:23:40.199630205Z     Block Hash: 0x41f5fc7986952c19ead0d9679ac8e01dd09686d060258b132a2638fee9d07aae
+anvil-1  | 2026-10-23T20:23:40.199631575Z     Block Time: "Fri, 23 Oct 2026 20:23:40 +0000"
+anvil-1  | 2026-10-23T20:23:40.199632930Z 
+anvil-1  | 2026-10-23T20:23:40.435722863Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:42.200010249Z 
+anvil-1  | 2026-10-23T20:23:42.200024024Z     Block Number: 49325286
+anvil-1  | 2026-10-23T20:23:42.200025662Z     Block Hash: 0xbf6888b139a754d0270cfe651401af4d061ae01adc8733449456260a64276655
+anvil-1  | 2026-10-23T20:23:42.200031819Z     Block Time: "Fri, 23 Oct 2026 20:23:42 +0000"
+anvil-1  | 2026-10-23T20:23:42.200032953Z 
+anvil-1  | 2026-10-23T20:23:42.726190623Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:44.199747666Z 
+anvil-1  | 2026-10-23T20:23:44.199767184Z     Block Number: 49325287
+anvil-1  | 2026-10-23T20:23:44.199768819Z     Block Hash: 0x7ac0749ec775858d567434c95552c25f4b4d8383306e1491f87feee351d06d4e
+anvil-1  | 2026-10-23T20:23:44.199770178Z     Block Time: "Fri, 23 Oct 2026 20:23:44 +0000"
+anvil-1  | 2026-10-23T20:23:44.199771559Z 
+anvil-1  | 2026-10-23T20:23:44.988148631Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:45.157666723Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:45.161647185Z eth_call
+anvil-1  | 2026-10-23T20:23:45.165707146Z eth_call
+anvil-1  | 2026-10-23T20:23:45.183365097Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:45.190120653Z eth_call
+anvil-1  | 2026-10-23T20:23:45.194507411Z eth_call
+anvil-1  | 2026-10-23T20:23:45.722127388Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:45.745109074Z eth_call
+anvil-1  | 2026-10-23T20:23:45.765297941Z eth_call
+anvil-1  | 2026-10-23T20:23:45.839390506Z eth_call
+anvil-1  | 2026-10-23T20:23:45.859456186Z eth_estimateGas
+anvil-1  | 2026-10-23T20:23:45.879482022Z eth_feeHistory
+anvil-1  | 2026-10-23T20:23:45.899684317Z eth_getTransactionCount
+anvil-1  | 2026-10-23T20:23:45.919693837Z eth_chainId
+anvil-1  | 2026-10-23T20:23:45.939782996Z eth_sendRawTransaction
+anvil-1  | 2026-10-23T20:23:45.959843385Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:23:46.022506794Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:46.042646045Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:46.062817000Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:46.082806779Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:23:46.199947194Z 
+anvil-1  | 2026-10-23T20:23:46.199960014Z     Transaction: 0x089ceaf739885fb1c4bc6e2790e312149e84da6224698c2ece7da7f1ff3f71ef
+anvil-1  | 2026-10-23T20:23:46.199961718Z     Gas used: 85720
+anvil-1  | 2026-10-23T20:23:46.199962971Z 
+anvil-1  | 2026-10-23T20:23:46.199964208Z     Block Number: 49325288
+anvil-1  | 2026-10-23T20:23:46.199965488Z     Block Hash: 0xccfc58b4a228dd82b6fc01f19a310417cc4d22c176ccd95a0993feb617ea24f1
+anvil-1  | 2026-10-23T20:23:46.199966892Z     Block Time: "Fri, 23 Oct 2026 20:23:46 +0000"
+anvil-1  | 2026-10-23T20:23:46.199968231Z 
+anvil-1  | 2026-10-23T20:23:47.267450495Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:48.199568448Z 
+anvil-1  | 2026-10-23T20:23:48.199583665Z     Block Number: 49325289
+anvil-1  | 2026-10-23T20:23:48.199585421Z     Block Hash: 0x3a5f5faf025ef313359f7558a44ee1c9ee88e415900ad669eeac73313240a989
+anvil-1  | 2026-10-23T20:23:48.199586975Z     Block Time: "Fri, 23 Oct 2026 20:23:48 +0000"
+anvil-1  | 2026-10-23T20:23:48.199588860Z 
+anvil-1  | 2026-10-23T20:23:49.749408848Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:50.200070724Z 
+anvil-1  | 2026-10-23T20:23:50.200089509Z     Block Number: 49325290
+anvil-1  | 2026-10-23T20:23:50.200090835Z     Block Hash: 0x797d1e6c538c20d98998929319cce5a8ef77be6f4380e13acf141120c328f3d2
+anvil-1  | 2026-10-23T20:23:50.200092122Z     Block Time: "Fri, 23 Oct 2026 20:23:50 +0000"
+anvil-1  | 2026-10-23T20:23:50.200093156Z 
+anvil-1  | 2026-10-23T20:23:52.031145503Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:52.200481874Z 
+anvil-1  | 2026-10-23T20:23:52.200488846Z     Block Number: 49325291
+anvil-1  | 2026-10-23T20:23:52.200490442Z     Block Hash: 0xf99ce5b472e56f85b9d67913a38b78fad7d4b69443595a862402a274b3a238f6
+anvil-1  | 2026-10-23T20:23:52.200491874Z     Block Time: "Fri, 23 Oct 2026 20:23:52 +0000"
+anvil-1  | 2026-10-23T20:23:52.200493289Z 
+anvil-1  | 2026-10-23T20:23:53.023836091Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:23:53.030120007Z eth_call
+anvil-1  | 2026-10-23T20:23:53.030509624Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:53.033122790Z eth_call
+anvil-1  | 2026-10-23T20:23:53.044060042Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:53.063961074Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.084017048Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.104260704Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.124211075Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.144176694Z eth_call
+anvil-1  | 2026-10-23T20:23:53.164278390Z eth_estimateGas
+anvil-1  | 2026-10-23T20:23:53.164423461Z 
+anvil-1  | 2026-10-23T20:23:53.164436540Z RPC request failed:
+anvil-1  | 2026-10-23T20:23:53.164444729Z     Request: EthEstimateGas(WithOtherFields { inner: TransactionRequest { from: Some(0x3dff5869bce42aa7695b8290dc2b6ff4e05b55e2), to: Some(Call(0x036cbd53842c5426634e7929541ec2318f3dcf7e)), gas_price: None, max_fee_per_gas: None, max_priority_fee_per_gas: None, max_fee_per_blob_gas: None, gas: None, value: None, input: TransactionInput { input: Some(0xe3ee160e0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac0000000000000000000000008a84ac525faa54e28991403cf9410d854857455600000000000000000000000000000000000000000000000000000000000027100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006adbc37db24768906d47c94cda015ab5dd281b181152c47806f15fc2af8fb40a7b35c5db000000000000000000000000000000000000000000000000000000000000001be0031d73d813568fa339db36208ffb660e11f9eae6252b031d57728260439a64174e0e7e22721460f3d3ac1a3668e73d1066d956ce1d1ad41eb93ca6ba2a6ea6), data: None }, nonce: None, chain_id: None, access_list: None, transaction_type: None, blob_versioned_hashes: None, sidecar: None, authorization_list: None }, other: OtherFields {} }, Some(pending), None, None)
+anvil-1  | 2026-10-23T20:23:53.164448670Z     Error: Execution error: execution reverted: FiatTokenV2: authorization is used or canceled
+anvil-1  | 2026-10-23T20:23:53.164450052Z 
+anvil-1  | 2026-10-23T20:23:53.184414760Z eth_call
+anvil-1  | 2026-10-23T20:23:53.204402287Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.224527411Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.244596671Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.313263269Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.374102639Z eth_getBlockByNumber
+anvil-1  | 2026-10-23T20:23:53.435603335Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:53.497930312Z 
+anvil-1  | 2026-10-23T20:23:53.497943019Z RPC request failed:
+anvil-1  | 2026-10-23T20:23:53.497944219Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a10f), to_block: Some(0x2f0a4eb) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0xb24768906d47c94cda015ab5dd281b181152c47806f15fc2af8fb40a7b35c5db}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:23:53.497946395Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":127,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f3764f0e656c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qvno%2B8dE4oKF0dlisygLvWmHt125Uk%2FCNxz4J5m%2BWTa1a1pbJxcQtUqopeImCS3Cnq%2BfZ1w%2Bo1uCmU0SQ54Su5rhyuMSs3eqzbpzUneWClaC3TMisNF6GI2c%2BDxgWNbgb6BdlQqlIAdbd3MUrE3aB1dOOCXkZmgZmxNNrgO%2BV9MRoA%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:23:53.497949255Z 
+anvil-1  | 2026-10-23T20:23:53.499085531Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:53.566368458Z 
+anvil-1  | 2026-10-23T20:23:53.566384854Z RPC request failed:
+anvil-1  | 2026-10-23T20:23:53.566386597Z     Request: EthGetLogs(Filter { block_option: Range { from_block: Some(0x2f0a2fe), to_block: Some(0x2f0a4eb) }, address: FilterSet { set: {0x036cbd53842c5426634e7929541ec2318f3dcf7e}, bloom_filter: OnceLock(<uninit>) }, topics: [FilterSet { set: {0x98de503528ee59b575ef0c0a2576a82497bfc029a5685b209e9ec333479b10a5}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0x0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {0xb24768906d47c94cda015ab5dd281b181152c47806f15fc2af8fb40a7b35c5db}, bloom_filter: OnceLock(<uninit>) }, FilterSet { set: {}, bloom_filter: OnceLock(<uninit>) }] })
+anvil-1  | 2026-10-23T20:23:53.566389150Z     Error: Internal error: Fork Error: Transport(HttpError(HttpError { status: 413, body: "{\"jsonrpc\":\"2.0\",\"id\":128,\"error\":{\"code\":-32614,\"message\":\"eth_getLogs is limited to a 200 range\"}}\n\nHTTP diagnostics:\ncf-ray: a4f3764f7ee06c20-DFW\nserver: cloudflare\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rkQxbm2gRCpzCzP%2BrDjVfbHJbNcjTHcJ66qTQH4L7NVE7K3%2BDVyuRHYCctWbkdeaMApVKgQ7VPAXQVQyrGHlvOrBC6Wh8ArpbufT93koPXs371g7E0KWvsfAd7hffIz0WUAnJdRkpSgUBdJyBlD34r6LJFqaRxF3Wlqk8qiK3FLUjA%3D%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}" }))
+anvil-1  | 2026-10-23T20:23:53.566391925Z 
+anvil-1  | 2026-10-23T20:23:53.567804263Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:53.645023528Z eth_getTransactionReceipt
+anvil-1  | 2026-10-23T20:23:53.665240195Z eth_call
+anvil-1  | 2026-10-23T20:23:53.686911171Z eth_call
+anvil-1  | 2026-10-23T20:23:53.687051571Z 
+anvil-1  | 2026-10-23T20:23:53.687056959Z RPC request failed:
+anvil-1  | 2026-10-23T20:23:53.687058583Z     Request: EthCall(WithOtherFields { inner: TransactionRequest { from: Some(0x3dff5869bce42aa7695b8290dc2b6ff4e05b55e2), to: Some(Call(0x036cbd53842c5426634e7929541ec2318f3dcf7e)), gas_price: None, max_fee_per_gas: None, max_priority_fee_per_gas: None, max_fee_per_blob_gas: None, gas: None, value: None, input: TransactionInput { input: Some(0xe3ee160e0000000000000000000000005856863a5abdc9d868fbd67efded4f9a7de5feac0000000000000000000000008a84ac525faa54e28991403cf9410d854857455600000000000000000000000000000000000000000000000000000000000027100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006adbc37db24768906d47c94cda015ab5dd281b181152c47806f15fc2af8fb40a7b35c5db000000000000000000000000000000000000000000000000000000000000001be0031d73d813568fa339db36208ffb660e11f9eae6252b031d57728260439a64174e0e7e22721460f3d3ac1a3668e73d1066d956ce1d1ad41eb93ca6ba2a6ea6), data: None }, nonce: None, chain_id: None, access_list: None, transaction_type: None, blob_versioned_hashes: None, sidecar: None, authorization_list: None }, other: OtherFields {} }, Some(latest), None, None)
+anvil-1  | 2026-10-23T20:23:53.687062149Z     Error: Execution error: execution reverted: FiatTokenV2: authorization is used or canceled
+anvil-1  | 2026-10-23T20:23:53.687063588Z 
+anvil-1  | 2026-10-23T20:23:53.692525430Z eth_getLogs
+anvil-1  | 2026-10-23T20:23:53.697012773Z eth_call
+anvil-1  | 2026-10-23T20:23:53.702044823Z eth_call
+anvil-1  | 2026-10-23T20:23:54.199947941Z 
+anvil-1  | 2026-10-23T20:23:54.199960653Z     Block Number: 49325292
+anvil-1  | 2026-10-23T20:23:54.199962032Z     Block Hash: 0x5319325207e54611ed94d92d2bf77a505b4cf4335c204efae71878dd1809aaff
+anvil-1  | 2026-10-23T20:23:54.199963045Z     Block Time: "Fri, 23 Oct 2026 20:23:54 +0000"
+anvil-1  | 2026-10-23T20:23:54.199964036Z 
+anvil-1  | 2026-10-23T20:23:54.321375600Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:56.199694288Z 
+anvil-1  | 2026-10-23T20:23:56.199709942Z     Block Number: 49325293
+anvil-1  | 2026-10-23T20:23:56.199711207Z     Block Hash: 0x2c511a9e087745605460656d4d19b742848ae7e3d0b623c0429179b8343ac647
+anvil-1  | 2026-10-23T20:23:56.199712232Z     Block Time: "Fri, 23 Oct 2026 20:23:56 +0000"
+anvil-1  | 2026-10-23T20:23:56.199713305Z 
+anvil-1  | 2026-10-23T20:23:56.568629081Z eth_blockNumber
+anvil-1  | 2026-10-23T20:23:58.200947890Z 
+anvil-1  | 2026-10-23T20:23:58.201021956Z     Block Number: 49325294
+anvil-1  | 2026-10-23T20:23:58.201033147Z     Block Hash: 0xf2644b88126a179f52c0ab99a3abc48d8164eba782ea8d30791a48ef7a4a30ab
+anvil-1  | 2026-10-23T20:23:58.201041497Z     Block Time: "Fri, 23 Oct 2026 20:23:58 +0000"
+anvil-1  | 2026-10-23T20:23:58.201049874Z 
+anvil-1  | 2026-10-23T20:23:58.816772717Z eth_blockNumber
+anvil-1  | 2026-10-23T20:24:00.200117789Z 
+anvil-1  | 2026-10-23T20:24:00.200186872Z     Block Number: 49325295
+anvil-1  | 2026-10-23T20:24:00.200204029Z     Block Hash: 0x925487d299ccf59b8eeaf06e05f2924669ccfe5cb3eb9912856f89fc72b476f8
+anvil-1  | 2026-10-23T20:24:00.200238920Z     Block Time: "Fri, 23 Oct 2026 20:24:00 +0000"
+anvil-1  | 2026-10-23T20:24:00.200245871Z 
+anvil-1  | 2026-10-23T20:24:01.088909552Z eth_blockNumber

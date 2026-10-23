@@ -1,0 +1,6 @@
+variant: chain-fallback-clamp-logs1000
+image: w3-x402-facilitator:chain-fallback-clamp
+facilitator config: facilitator-fork-reconcile-logs1000.json
+compose override: docker-compose.restart.yml
+image id: sha256:9981e7af698cd5c246ab05a26d1c315c5f1ffb005db9a31d504c8628320bae0f
+labels: {"org.opencontainers.image.revision":"815259be81bc37525bc8d888546cf5314652ebac"}

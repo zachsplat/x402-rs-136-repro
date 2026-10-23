@@ -1,0 +1,16 @@
+{
+  "port": 8080,
+  "host": "0.0.0.0",
+  "chains": {
+    "eip155:84532": {
+      "eip1559": true,
+      "signers": ["$XD_FACILITATOR_SIGNER"],
+      "rpc": [{ "http": "http://proxy:8546", "rate_limit": 50 }],
+      "reconcile_used_authorizations": true,
+      "log_query_max_blocks": 1000
+    }
+  },
+  "schemes": [
+    { "id": "v2-eip155-exact", "chains": "eip155:84532" }
+  ]
+}

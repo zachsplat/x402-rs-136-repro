@@ -1,0 +1,48 @@
+source ef0e0ffc808090a24a888f8b3ff0809575924d94 (eip3009-chain-fallback)
+cargo 1.99.1 (5f94df478 2026-08-27)
+msrv cargo 1.93.0 (083ac5135 2025-12-15)
+fmt: exit 0 (0 s): x402-rs-136-repro/harness/cargo.sh fmt --all --check
+test-eip155: exit 0 (5 s): x402-rs-136-repro/harness/cargo.sh test -p x402-chain-eip155 --features full --locked
+clippy-eip155-full: exit 0 (2 s): x402-rs-136-repro/harness/cargo.sh clippy -p x402-chain-eip155 --features full --all-targets --locked
+clippy-workspace: exit 0 (2 s): x402-rs-136-repro/harness/cargo.sh clippy --workspace --all-targets --locked
+build: exit 0 (22 s): x402-rs-136-repro/harness/cargo.sh build --package x402-facilitator --features full --release --locked
+test-types: exit 0 (1 s): x402-rs-136-repro/harness/cargo.sh test -p x402-types --locked
+test-local: exit 0 (1 s): x402-rs-136-repro/harness/cargo.sh test -p x402-facilitator-local --locked
+msrv-check: exit 0 (2 s): env IMAGE=rust:1.93.0-bookworm x402-rs-136-repro/harness/cargo.sh check -p x402-types -p x402-facilitator-local -p x402-facilitator --features x402-chain-eip155/full --locked
+test-workspace: exit 101 (9 s): x402-rs-136-repro/harness/cargo.sh test --workspace --no-fail-fast --locked
+test result: ok. 67 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 0 passed; 0 failed; 11 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 67 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test networks::tests::permit2_proxies ... FAILED
+failures:
+failures:
+test result: FAILED. 5 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 7 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 2 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 5 passed; 0 failed; 9 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 13 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 4 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 25 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
+clippy warning+error line counts (workspace, eip155-full): 10 13
+clippy warning+error lines: eip155-full 10, workspace 13
+clippy at a15d29a (logs/ci-chain-fallback/), same commands: eip155-full 10, workspace 13, the same warnings in the same files
+test --workspace: 162 passed, 1 failed (x402-chain-tron networks::tests::permit2_proxies, which also fails on main and at c547a34)
+build: the release binary from this run's build step is the binary in the image of fork-chain-fallback-clamp-logs1000-20261023T202602Z

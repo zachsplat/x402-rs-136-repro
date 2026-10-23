@@ -1,0 +1,107 @@
+   Compiling x402-chain-eip155 v2.0.2 (../x402-rs/crates/chains/x402-chain-eip155)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.22s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running unittests src/lib.rs (/target/debug/deps/x402_chain_eip155-6987081d688f19ef)
+
+running 67 tests
+test chain::authorization_use::tests::test_block_search_stops_at_genesis ... ok
+test chain::authorization_use::tests::test_block_search_passes_lookup_errors_on ... ok
+test chain::authorization_use::tests::test_block_search_returns_latest_when_it_is_not_after_the_target ... ok
+test chain::authorization_use::tests::test_block_search_lands_at_or_before_the_target_in_few_lookups ... ok
+test chain::authorization_use::tests::test_rpc_errors_end_the_lookup_with_an_error ... ok
+test chain::authorization_use::tests::test_authorization_that_expired_before_the_lookback_is_not_searched ... ok
+test chain::authorization_use::tests::test_unused_authorization_is_one_call ... ok
+test chain::authorization_use::tests::test_other_log_query_errors_are_not_retried ... ok
+test chain::config::tests::test_log_query_max_blocks_is_100_unless_set_and_not_zero ... ok
+test chain::authorization_use::tests::test_refused_single_block_ends_the_lookup_with_the_error ... ok
+test chain::authorization_use::tests::test_refused_range_is_halved_until_the_rpc_takes_it ... ok
+test chain::config::tests::test_reconcile_used_authorizations_is_off_unless_set ... ok
+test chain::pending_settlement::tests::test_key_is_the_signature_hash ... ok
+test chain::pending_settlement::tests::test_remove_drops_the_entry ... ok
+test chain::authorization_use::tests::test_used_authorization_is_found_with_a_bounded_log_query ... ok
+test chain::pending_settlement::tests::test_entries_expire_after_the_ttl ... ok
+test chain::authorization_use::tests::test_used_authorization_without_a_log_in_range_is_not_found ... ok
+test chain::pending_settlement::tests::test_request_hash_depends_on_payload_and_requirements ... ok
+test chain::pending_settlement::tests::test_take_with_another_request_leaves_the_entry ... ok
+test chain::pending_settlement::tests::test_take_returns_the_hash_once ... ok
+test chain::provider::tests::authorization_use::test_failed_lookup_counts_as_not_found ... ok
+test chain::authorization_use::tests::test_lookup_stops_at_the_call_limit_with_the_newest_blocks_searched ... ok
+test chain::provider::tests::test_poll_receipt_lookup_finds_receipt_once_lookups_recover ... ok
+test chain::provider::tests::test_poll_receipt_lookup_gives_up_at_the_timeout ... ok
+test chain::provider::tests::authorization_use::test_lookup_is_off_unless_configured ... ok
+test chain::provider::tests::test_retry_receipt_lookup_finds_receipt_after_failed_lookups ... ok
+test chain::types::tests::test_parse_exact_precision ... ok
+test chain::provider::tests::test_retry_receipt_lookup_stops_at_first_receipt ... ok
+test chain::types::tests::test_parse_large_amount ... ok
+test chain::provider::tests::test_retry_receipt_lookup_gives_up_after_all_attempts ... ok
+test chain::types::tests::test_parse_precision_too_high ... ok
+test chain::provider::tests::authorization_use::test_lookup_finds_the_transaction_and_its_receipt ... ok
+test chain::types::tests::test_parse_smallest_amount ... ok
+test chain::types::tests::test_parse_whole_number ... ok
+test chain::types::tests::test_parse_very_large_amount_with_high_decimals ... ok
+test chain::provider::tests::authorization_use::test_transaction_found_without_its_receipt_comes_back_with_its_hash ... ok
+test chain::types::tests::test_parse_with_commas ... ok
+test chain::types::tests::test_parse_with_currency_symbol ... ok
+test chain::types::tests::test_parse_with_decimals ... ok
+test chain::types::tests::test_parse_zero_decimals ... ok
+test networks::tests::sbc_radius_deployments_use_permit2 ... ok
+test chain::provider::tests::authorization_use::test_lookup_queries_logs_in_ranges_of_the_configured_size ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_reconciles_with_the_broadcast_transaction_without_sending_again ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_of_a_reverted_settlement_is_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_request_that_does_not_match_its_requirements_is_not_looked_up ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_receipt_unavailable_is_recorded_for_the_retry ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_arc_provider_passes_the_store_and_lookups_through ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_providers_look_nothing_up_by_default ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_with_a_store_entry_reconciles_without_a_lookup ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_retry_while_the_receipt_is_still_unavailable_stays_pending_with_the_same_hash ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_same_signature_in_another_matching_request_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_success_and_failures_before_broadcast_record_nothing ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_same_signature_in_another_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_success_and_pending_settlements_are_not_looked_up ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_without_its_receipt_is_pending_and_checked_again ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_v1_request_is_looked_up_only_when_it_matches_its_requirements ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_after_a_failed_balance_check_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_error_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::test_receipt_timeout_after_broadcast_settles_as_pending_with_hash ... ok
+test v1_eip155_exact::facilitator::tests::test_reverted_transaction_stays_a_failure ... ok
+test v1_eip155_exact::facilitator::tests::test_send_error_before_broadcast_stays_a_failure ... ok
+test v2_eip155_exact::facilitator::eip3009::tests::test_request_is_looked_up_only_when_it_matches_its_requirements ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_not_found_fails_as_before ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_used_authorization_without_a_store_entry_answers_the_transaction_found ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_without_a_store_every_request_settles_from_scratch ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_that_is_not_ours_or_did_not_use_the_authorization_is_not_the_settlement ... ok
+test v1_eip155_exact::facilitator::tests::pending_store::test_transaction_found_with_another_transfer_is_not_the_settlement ... ok
+
+test result: ok. 67 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+   Doc-tests x402_chain_eip155
+
+running 23 tests
+test crates/chains/x402-chain-eip155/src/chain/config.rs - chain::config::Eip155ChainConfig (line 18) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/mod.rs - chain (line 29) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment (line 201) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155TokenDeployment::parse (line 331) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 35) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/lib.rs - (line 64) ... ignored
+test crates/chains/x402-chain-eip155/src/networks.rs - networks::KnownNetworkEip155 (line 21) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::SignerLike (line 250) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/client.rs - v1_eip155_exact::client::V1Eip155ExactClient (line 51) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/mod.rs - v1_eip155_exact (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v1_eip155_exact/server.rs - v1_eip155_exact::server::V1Eip155Exact::price_tag (line 32) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client (line 9) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/client.rs - v2_eip155_exact::client::V2Eip155ExactClient (line 143) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/mod.rs - v2_eip155_exact (line 23) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_exact/server.rs - v2_eip155_exact::server::V2Eip155Exact::price_tag (line 33) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client (line 8) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/client.rs - v2_eip155_upto::client::V2Eip155UptoClient (line 151) ... ignored
+test crates/chains/x402-chain-eip155/src/v2_eip155_upto/mod.rs - v2_eip155_upto (line 30) ... ignored
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::Eip155ChainReference (line 102) ... ok
+test crates/chains/x402-chain-eip155/src/chain/pending_nonce_manager.rs - chain::pending_nonce_manager::PendingNonceManager (line 36) ... ok
+test crates/chains/x402-chain-eip155/src/chain/types.rs - chain::types::ChecksummedAddress (line 25) ... ok
+
+test result: ok. 3 passed; 0 failed; 20 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+all doctests ran in 0.26s; merged doctests compilation took 0.25s
